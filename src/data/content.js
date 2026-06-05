@@ -52,6 +52,44 @@ export const reviews = [
   },
 ]
 
+export const WHATSAPP_URL = 'https://wa.me/385911234567'
+
+export const boats = [
+  {
+    id: 1,
+    name: 'Sea Breeze 32',
+    capacity: '8 guests',
+    price: '350 € / day',
+    description:
+      'Modernan day cruiser idealan za obiteljske ture uz Pakleni otoci. Udobna paluba, hladnjak i bluetooth zvučnik uključeni.',
+    image:
+      'https://images.unsplash.com/photo-1567899378494-47b05033f870?w=800&q=80',
+    imageAlt: 'Sea Breeze 32 brod na moru',
+  },
+  {
+    id: 2,
+    name: 'Adriatic Explorer',
+    capacity: '10 guests',
+    price: '480 € / day',
+    description:
+      'Prostran brod za cjelodnevne ture s punom opremom. Savršen za grupe koje žele kombinaciju kupanja, ručaka i zalaska sunca.',
+    image:
+      'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=800&q=80',
+    imageAlt: 'Adriatic Explorer jahta u uvali',
+  },
+  {
+    id: 3,
+    name: 'Hvar Sunset',
+    capacity: '6 guests',
+    price: '290 € / day',
+    description:
+      'Kompaktan i elegantan brod za intimne ture. Brz, lagan za manoeuveriranje u skrivene uvale oko Hvara.',
+    image:
+      'https://images.unsplash.com/photo-1605281317010-76c7bdecaa2a?w=800&q=80',
+    imageAlt: 'Hvar Sunset brod na otvorenom moru',
+  },
+]
+
 export const galleryImages = [
   {
     id: 1,
