@@ -161,7 +161,7 @@ export const safariTours = [
     image:
       'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80',
     imageAlt: 'Quad safari tour on Hvar',
-    note: 'Duration ~2.5h · equipment included · limited availability — book in advance',
+    note: 'Duration ~2.5h',
   },
 ]
 
