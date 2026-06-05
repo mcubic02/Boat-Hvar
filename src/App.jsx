@@ -1,5 +1,4 @@
 import Hero from './components/Hero'
-import QuickInfo from './components/QuickInfo'
 import Reviews from './components/Reviews'
 import Gallery from './components/Gallery'
 import BoatTours from './components/BoatTours'
@@ -12,7 +11,6 @@ function App() {
       <Gallery />
       <BoatTours />
       <main>
-        <QuickInfo />
         <Reviews />
       </main>
       <Footer />

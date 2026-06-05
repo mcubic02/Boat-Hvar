@@ -1,0 +1,78 @@
+.review-card {
+  box-sizing: border-box;
+  width: 599px;
+  max-width: 100%;
+  min-height: 281px;
+  border-radius: 6.86px;
+  padding: 32.92px 95.11px 32.92px 43.89px;
+  background: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.review-card__eyebrow {
+  font-family: 'KH Teka TRIAL', 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 10.25px;
+  line-height: 14.4px;
+  letter-spacing: 0;
+  color: #2a2a2a;
+  text-transform: capitalize;
+}
+
+.review-card__stars {
+  display: flex;
+  gap: 2px;
+}
+
+.review-card__star {
+  color: rgba(42, 42, 42, 0.2);
+  font-size: 0.85rem;
+}
+
+.review-card__star--filled {
+  color: #2a2a2a;
+}
+
+.review-card__text {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: #2a2a2a;
+  flex: 1;
+}
+
+.review-card__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.review-card__name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #2a2a2a;
+  font-style: normal;
+}
+
+.review-card__meta {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.3;
+  color: rgba(42, 42, 42, 0.65);
+}
+
+@media (max-width: 768px) {
+  .review-card {
+    width: 100%;
+    padding: 1.75rem 1.5rem;
+    min-height: auto;
+  }
+}
