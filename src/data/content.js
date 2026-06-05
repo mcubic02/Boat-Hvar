@@ -57,17 +57,17 @@ export const WHATSAPP_URL = 'https://wa.me/385911234567'
 export const boats = [
   {
     id: 0,
-    name: 'Joker Coaster',
-    capacity: '7 people',
+    name: 'Speed Boat',
+    capacity: '5 people',
     price: '180 € / day',
     description:
       'A fast and agile speedboat ideal for exploring hidden coves and the Pakleni islands. Perfect for groups looking for a day full of adventure at sea.',
-    image: '/images/JokerCoaster.jpg',
-    imageAlt: 'Joker Coaster speedboat at sea',
+    image: '/images/SpeedBoat.jpg',
+    imageAlt: 'Speedboat at sea',
     note: 'drivers licence needed · fuel not included',
   },
   {
-    id: 4,
+    id: 1,
     name: 'Pasara',
     capacity: '5 people',
     price: '90 € / day',
@@ -78,7 +78,7 @@ export const boats = [
     note: 'no licence needed · fuel included',
   },
   {
-    id: 5,
+    id: 2,
     name: 'Kayak',
     capacity: '1 or 2 persons',
     price: '15 € / hour · 40 € / day',
@@ -86,6 +86,39 @@ export const boats = [
       'Explore the coastline at your own pace. A great way to reach nearby beaches and coves under your own power, perfect for a single paddler or a pair.',
     image: '/images/Kayak.avif',
     imageAlt: 'Kayak on the sea',
+    note: 'no licence needed',
+  },
+  {
+    id: 3,
+    name: 'Sunbird',
+    capacity: '7 people',
+    price: '290 € / day',
+    description:
+      'A spacious and comfortable boat for larger groups. Ideal for family trips or gatherings, with plenty of space for relaxation and fun on the water.',
+    image: '/images/Sunbird.jpeg',
+    imageAlt: 'Sunbird boat at sea',
+    note: 'licence needed',
+  },
+  {
+    id: 4,
+    name: 'Joker Coaster ',
+    capacity: '7 people',
+    price: '290 € / day',
+    description:
+      'A fast and agile speedboat ideal for exploring hidden coves and the Pakleni islands. Perfect for groups looking for a day full of adventure at sea.',
+    image: '/images/JokerCoaster.jpg',
+    imageAlt: 'Joker Coaster speedboat at sea',
+    note: 'licence needed',
+  },
+  {
+    id: 5,
+    name: 'Jet ski',
+    capacity: '1 person',
+    price: '50 € / 15 minutes',
+    description:
+      'A fast and agile jet ski ideal for exploring hidden coves and the Pakleni islands. Perfect for a single person looking for a day full of adventure at sea.',
+    image: '/images/JetSki.jpg',
+    imageAlt: 'Jet ski at sea',
     note: 'no licence needed',
   },
 ]
