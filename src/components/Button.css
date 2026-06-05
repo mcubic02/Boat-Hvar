@@ -10,7 +10,7 @@
   border: none;
   border-radius: 30px;
   background: #ece4f412;
-  color: #f4ede4;
+  color: var(--font-color);
   font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
@@ -28,7 +28,7 @@
   inset: 0;
   border-radius: 30px;
   padding: 1px;
-  background: linear-gradient(84.64deg, #f4ede4 -1.69%, #8e8a85 97.21%);
+  background: linear-gradient(84.64deg, var(--font-color) -1.69%, #8e8a85 97.21%);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);

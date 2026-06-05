@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { galleryImages } from '../data/content'
 import GalleryPopup from './GalleryPopup'
+import Button from './Button'
 
 function Gallery() {
   const [isPopupOpen, setIsPopupOpen] = useState(false)
@@ -18,38 +19,22 @@ function Gallery() {
   return (
     <>
       <section id="gallery" className="gallery">
-        <div className="container">
-          <div className="section-header section-header--compact">
-            <p className="section-eyebrow">Galerija</p>
-            <h2>Trenuci s mora</h2>
-          </div>
+        <div className="gallery__inner">
+          <h2 className="gallery__title">
+            Ko smo mi, sta iznajmljujemo i da se lako uanjmi sve priko wappa.
+          </h2>
 
-          <div className="gallery__grid">
-            {galleryImages.map((image, index) => (
-              <button
-                key={image.id}
-                type="button"
-                className="gallery__thumb"
-                onClick={() => openPopup(index)}
-                aria-label={`Otvori: ${image.caption}`}
-              >
-                <img src={image.src} alt={image.alt} loading="lazy" />
-                <span className="gallery__thumb-overlay">
-                  <span className="gallery__thumb-icon" aria-hidden="true">⊕</span>
-                  <span className="gallery__thumb-caption">{image.caption}</span>
-                </span>
-              </button>
-            ))}
-          </div>
+          <p className="gallery__text">
+            Each Oasis Meu houseboat is handcrafted using premium sustainable
+            materials and cutting-edge technology, offering an unmatched blend
+            of comfort, style, and reliability on both water and land. With over
+            7 years of experience in
+          </p>
 
           <div className="gallery__actions">
-            <button
-              type="button"
-              className="btn btn--gallery"
-              onClick={() => openPopup(0)}
-            >
-              Otvori cijelu galeriju
-            </button>
+            <Button onClick={() => openPopup(0)}>
+              Gallery
+            </Button>
           </div>
         </div>
       </section>

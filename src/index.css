@@ -17,7 +17,9 @@
   --color-text: #1a2b3c;
   --color-muted: #5a6b7d;
   --color-white: #ffffff;
-  --background-color:#090A17;
+  --background-color: #090a17;
+  --font-color: #f4ede4;
+  --background-color-light: color-mix(in srgb, var(--background-color) 75%, var(--font-color) 12%);
 
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body: 'Source Sans 3', system-ui, sans-serif;
@@ -191,7 +193,7 @@ a {
   font-size: clamp(18px, 2.5vw, 32px);
   line-height: 100%;
   letter-spacing: 0;
-  color: #f4ede4;
+  color: var(--font-color);
   margin-bottom: 2.5rem;
   white-space: nowrap;
 }
@@ -345,11 +347,45 @@ a {
   display: none;
 }
 
-/* ── Gallery section (ispod Hero) ── */
+/* ── Gallery section ── */
 .gallery {
-  padding: 3.5rem 0 4rem;
-  background: var(--color-white);
-  border-bottom: 1px solid rgba(10, 77, 104, 0.08);
+  padding: 4rem 1.5rem 5rem;
+  background: linear-gradient(
+    180deg,
+    var(--background-color-light) 0%,
+    var(--background-color) 14%,
+    var(--background-color) 100%
+  );
+}
+
+.gallery__inner {
+  max-width: 720px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  color: var(--font-color);
+  margin-bottom: 1.5rem;
+}
+
+.gallery__text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+  color: var(--font-color);
+  margin-bottom: 2rem;
+  max-width: 600px;
 }
 
 .gallery__grid {
@@ -361,19 +397,6 @@ a {
 .gallery__actions {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
-}
-
-.btn--gallery {
-  background: var(--color-ocean);
-  color: var(--color-white);
-  padding: 0.75rem 2rem;
-}
-
-.btn--gallery:hover {
-  background: var(--color-teal);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
 }
 
 .gallery__thumb {
