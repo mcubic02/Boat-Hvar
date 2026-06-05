@@ -1,4 +1,4 @@
-import { boats, quads, fishingTrips } from '../data/content'
+import { boats, quads, safariTours, fishingTrips } from '../data/content'
 import ToursSection from './ToursSection'
 import './BoatTours.css'
 
@@ -20,6 +20,14 @@ function BoatTours() {
         items={quads}
         prevAriaLabel="Previous quad"
         nextAriaLabel="Next quad"
+      />
+
+      <ToursSection
+        id="safari-tours"
+        marqueeLabel="SAFARI TOUR"
+        items={safariTours}
+        prevAriaLabel="Previous safari tour"
+        nextAriaLabel="Next safari tour"
       />
 
       <ToursSection

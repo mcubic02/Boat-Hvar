@@ -126,25 +126,42 @@ export const boats = [
 export const quads = [
   {
     id: 1,
-    name: 'Hvar Trail Explorer',
-    capacity: '2 riders',
-    price: '120 € / tour',
+    name: 'Linhai Landforce 550L',
+    capacity: 'up to 2 persons per quad',
+    price: '110 € / day',
     description:
-      'A quad ride through olive groves and along the Hvar coast. Guide, helmets and basic training included in the price.',
+      'Real off-road experience — rocky terrain, sea-view trails and hidden island routes. Explore Hvar like a local with a professional guide.',
     image:
       'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80',
-    imageAlt: 'Quad ATV on a gravel road',
+    imageAlt: 'Linhai Landforce 550L quad ATV',
+    note: 'Ivan Dolac · Zavala · Sv. Nedilja',
   },
   {
     id: 2,
-    name: 'Island Ridge Run',
-    capacity: '2 riders',
-    price: '150 € / tour',
+    name: 'Linhai Landforce 650L Pro',
+    capacity: 'up to 2 persons per quad',
+    price: '130 € / day',
     description:
-      'For adventurers who want to see Hvar from above. Panoramic stops and photo breaks at the most beautiful spots.',
+      'Our top-spec quad for the most demanding off-road routes. More power for rocky terrain, sea-view trails and hidden island roads.',
     image:
       'https://images.unsplash.com/photo-1622185135695-4799a5969de8?w=800&q=80',
-    imageAlt: 'Quad on hilly terrain',
+    imageAlt: 'Linhai Landforce 650L Pro quad ATV',
+    note: 'Ivan Dolac · Zavala · Sv. Nedilja',
+  },
+]
+
+export const safariTours = [
+  {
+    id: 1,
+    name: 'Safari Tour',
+    capacity: 'up to 2 persons per quad',
+    price: '60 € / person',
+    description:
+      'Off-road adventure with amazing viewpoints, led by a professional guide. Explore Hvar like a local — rocky terrain, sea-view trails and hidden island routes. Equipment included.',
+    image:
+      'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80',
+    imageAlt: 'Quad safari tour on Hvar',
+    note: 'Duration ~2.5h · equipment included · limited availability — book in advance',
   },
 ]
 

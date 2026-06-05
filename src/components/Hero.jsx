@@ -3,6 +3,7 @@ import Button from './Button'
 const heroServices = [
   { label: 'Boat rental', href: '#boat-rental' },
   { label: 'Quad tours', href: '#quad-tours' },
+  { label: 'Safari tour', href: '#safari-tours' },
   { label: 'Fishing trips', href: '#fishing-trips' },
 ]
 
