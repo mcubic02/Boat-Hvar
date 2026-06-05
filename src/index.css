@@ -17,6 +17,7 @@
   --color-text: #1a2b3c;
   --color-muted: #5a6b7d;
   --color-white: #ffffff;
+  --background-color:#090A17;
 
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body: 'Source Sans 3', system-ui, sans-serif;
@@ -149,137 +150,59 @@ a {
   position: relative;
   min-height: 100svh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  background:
-    linear-gradient(160deg, rgba(10, 37, 64, 0.75) 0%, rgba(8, 131, 149, 0.45) 100%),
-    url('https://images.unsplash.com/photo-1567899378494-47b05033f870?w=1920&q=80') center / cover no-repeat;
-  color: var(--color-white);
   overflow: hidden;
+  background: #0a2540;
+}
+
+.hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 70% 80%, rgba(5, 191, 219, 0.15) 0%, transparent 60%);
+  background: rgba(10, 37, 64, 0.35);
   pointer-events: none;
-}
-
-.hero__nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.25rem clamp(1rem, 4vw, 2.5rem);
-  z-index: 2;
-}
-
-.hero__logo {
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-.hero__nav-links {
-  display: flex;
-  gap: 0.25rem;
-}
-
-.hero__nav-links button {
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.9rem;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
-  transition: background var(--transition), color var(--transition);
-}
-
-.hero__nav-links button:hover {
-  background: rgba(255, 255, 255, 0.12);
-  color: var(--color-white);
+  z-index: 1;
 }
 
 .hero__content {
   position: relative;
-  z-index: 1;
-  padding: 6rem clamp(1.5rem, 5vw, 3rem) 4rem;
-  max-width: 720px;
-}
-
-.hero__eyebrow {
-  font-size: 0.85rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-aqua);
-  margin-bottom: 1rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  max-width: 900px;
 }
 
 .hero__title {
-  font-family: var(--font-display);
-  font-size: clamp(2.5rem, 7vw, 4.25rem);
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 1.25rem;
+  font-size: clamp(18px, 2.5vw, 32px);
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #f4ede4;
+  margin-bottom: 2.5rem;
+  white-space: nowrap;
 }
 
-.hero__title em {
-  font-style: italic;
-  color: var(--color-aqua);
-}
-
-.hero__subtitle {
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-  font-weight: 300;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 2.25rem;
-  max-width: 540px;
-}
-
-.hero__actions {
+.hero__buttons {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.hero__scroll-hint {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.hero__scroll-hint span {
-  display: block;
-  width: 24px;
-  height: 40px;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  border-radius: 12px;
-  position: relative;
-}
-
-.hero__scroll-hint span::after {
-  content: '';
-  position: absolute;
-  top: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  height: 8px;
-  background: var(--color-aqua);
-  border-radius: 2px;
-  animation: scroll-bounce 2s infinite;
-}
-
-@keyframes scroll-bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 1; }
-  50% { transform: translateX(-50%) translateY(10px); opacity: 0.3; }
 }
 
 /* ── Quick Info ── */
@@ -687,14 +610,6 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .hero__nav-links {
-    display: none;
-  }
-
-  .hero__content {
-    padding-top: 5rem;
-  }
-
   .footer__inner {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -734,11 +649,7 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .hero__actions {
+  .hero__buttons {
     flex-direction: column;
-  }
-
-  .hero__actions .btn {
-    width: 100%;
   }
 }
