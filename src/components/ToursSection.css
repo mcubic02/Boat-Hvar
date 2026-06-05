@@ -1,0 +1,7 @@
+.tours-section__marquee {
+  margin-bottom: 2.5rem;
+}
+
+.tours-section + .tours-section {
+  margin-top: 3rem;
+}

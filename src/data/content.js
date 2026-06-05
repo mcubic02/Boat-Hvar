@@ -90,6 +90,45 @@ export const boats = [
   },
 ]
 
+export const quads = [
+  {
+    id: 1,
+    name: 'Hvar Trail Explorer',
+    capacity: '2 riders',
+    price: '120 € / tour',
+    description:
+      'Vožnja quadovima kroz maslinike i uz obalu Hvara. Vodič, kacige i osnovna obuka uključeni u cijenu.',
+    image:
+      'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80',
+    imageAlt: 'Quad ATV na makadamskom putu',
+  },
+  {
+    id: 2,
+    name: 'Island Ridge Run',
+    capacity: '2 riders',
+    price: '150 € / tour',
+    description:
+      'Za avanturiste koji žele vidjeti Hvar s visoka. Panoramski zaustanci i foto pauze na najljepšim točkama.',
+    image:
+      'https://images.unsplash.com/photo-1622185135695-4799a5969de8?w=800&q=80',
+    imageAlt: 'Quad na brdskom terenu',
+  },
+]
+
+export const fishingTrips = [
+  {
+    id: 1,
+    name: 'Sunrise Fishing Trip',
+    capacity: '6 guests',
+    price: '280 € / trip',
+    description:
+      'Jutarnji izlet s iskusnim ribarom. Oprema, mamac i osvježenje na brodu uključeni. Idealno za početnike i entuzijaste.',
+    image:
+      'https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=800&q=80',
+    imageAlt: 'Ribolov s broda na moru',
+  },
+]
+
 export const galleryImages = [
   {
     id: 1,
