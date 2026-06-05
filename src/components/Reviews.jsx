@@ -12,8 +12,8 @@ function Reviews() {
         <CarouselSlider
           className="reviews__carousel"
           items={reviews}
-          prevAriaLabel="Prethodna recenzija"
-          nextAriaLabel="Sljedeća recenzija"
+          prevAriaLabel="Previous review"
+          nextAriaLabel="Next review"
           renderSlide={(review) => (
             <ReviewCard key={review.id} review={review} />
           )}

@@ -17,7 +17,7 @@ function Hero() {
         playsInline
         poster="https://images.unsplash.com/photo-1567899378494-47b05033f870?w=1920&q=80"
       >
-        {/* Dodaj video kasnije:
+        {/* Add video later:
         <source src="/videos/hero.mp4" type="video/mp4" />
         */}
       </video>

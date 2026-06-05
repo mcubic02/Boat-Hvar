@@ -32,13 +32,13 @@ function GalleryPopup({ images, activeIndex, onClose, onChangeIndex }) {
       className="gallery-popup"
       role="dialog"
       aria-modal="true"
-      aria-label="Galerija — uvećani prikaz"
+      aria-label="Gallery — enlarged view"
     >
       <button
         type="button"
         className="gallery-popup__backdrop"
         onClick={onClose}
-        aria-label="Zatvori galeriju"
+        aria-label="Close gallery"
       />
 
       <div className="gallery-popup__content">
@@ -46,7 +46,7 @@ function GalleryPopup({ images, activeIndex, onClose, onChangeIndex }) {
           type="button"
           className="gallery-popup__close"
           onClick={onClose}
-          aria-label="Zatvori"
+          aria-label="Close"
         >
           ✕
         </button>
@@ -55,7 +55,7 @@ function GalleryPopup({ images, activeIndex, onClose, onChangeIndex }) {
           type="button"
           className="gallery-popup__nav gallery-popup__nav--prev"
           onClick={goPrev}
-          aria-label="Prethodna slika"
+          aria-label="Previous image"
         >
           ‹
         </button>
@@ -78,7 +78,7 @@ function GalleryPopup({ images, activeIndex, onClose, onChangeIndex }) {
           type="button"
           className="gallery-popup__nav gallery-popup__nav--next"
           onClick={goNext}
-          aria-label="Sljedeća slika"
+          aria-label="Next image"
         >
           ›
         </button>

@@ -9,24 +9,25 @@ function BoatTours() {
         id="boat-tours"
         marqueeLabel="BOAT TOURS"
         items={boats}
-        prevAriaLabel="Prethodni brod"
-        nextAriaLabel="Sljedeći brod"
+        prevAriaLabel="Previous boat"
+        nextAriaLabel="Next boat"
+        footnote="*skipper available - price on demand"
       />
 
       <ToursSection
         id="quad-tours"
         marqueeLabel="QUAD TOURS"
         items={quads}
-        prevAriaLabel="Prethodni quad"
-        nextAriaLabel="Sljedeći quad"
+        prevAriaLabel="Previous quad"
+        nextAriaLabel="Next quad"
       />
 
       <ToursSection
         id="fishing-tours"
         marqueeLabel="FISHING TOURS"
         items={fishingTrips}
-        prevAriaLabel="Prethodna tura"
-        nextAriaLabel="Sljedeća tura"
+        prevAriaLabel="Previous tour"
+        nextAriaLabel="Next tour"
       />
     </section>
   )

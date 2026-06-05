@@ -5,6 +5,7 @@ function BoatCard({
   capacity,
   price,
   description,
+  note,
   image,
   imageAlt,
   bookUrl,
@@ -15,10 +16,10 @@ function BoatCard({
       <div className="boat-card__content">
         <div className="boat-card__info">
           <h3 className="boat-card__name">{name}</h3>
-          <p className="boat-card__meta">
-            {capacity} | {price}
-          </p>
+          <p className="boat-card__meta">{capacity}</p>
+          <p className="boat-card__price">{price}</p>
           <p className="boat-card__description">{description}</p>
+          {note && <p className="boat-card__note">{note}</p>}
         </div>
 
         <div className="boat-card__image-wrap">

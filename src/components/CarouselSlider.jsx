@@ -5,8 +5,8 @@ import './CarouselSlider.css'
 function CarouselSlider({
   items,
   renderSlide,
-  prevAriaLabel = 'Prethodni',
-  nextAriaLabel = 'Sljedeći',
+  prevAriaLabel = 'Previous',
+  nextAriaLabel = 'Next',
   showArrows,
   className = '',
 }) {

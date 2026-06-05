@@ -5,11 +5,11 @@ function QuickInfo() {
     <section id="quick-info" className="quick-info">
       <div className="container">
         <div className="section-header">
-          <p className="section-eyebrow">Brzi pregled</p>
-          <h2>Sve što trebate znati</h2>
+          <p className="section-eyebrow">Quick overview</p>
+          <h2>Everything you need to know</h2>
           <p className="section-desc">
-            Jednostavna rezervacija, fleksibilni termini i personalizirana ruta
-            prema vašim željama.
+            Simple booking, flexible dates and a personalized route
+            tailored to your wishes.
           </p>
         </div>
 

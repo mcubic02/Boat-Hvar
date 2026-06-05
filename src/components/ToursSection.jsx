@@ -8,9 +8,10 @@ function ToursSection({
   id,
   marqueeLabel,
   items,
-  prevAriaLabel = 'Prethodni',
-  nextAriaLabel = 'Sljedeći',
+  prevAriaLabel = 'Previous',
+  nextAriaLabel = 'Next',
   showArrows,
+  footnote,
 }) {
   if (!items.length) return null
 
@@ -30,12 +31,15 @@ function ToursSection({
             capacity={item.capacity}
             price={item.price}
             description={item.description}
+            note={item.note}
             image={item.image}
             imageAlt={item.imageAlt}
             bookUrl={WHATSAPP_URL}
           />
         )}
       />
+
+      {footnote && <p className="tours-section__footnote">{footnote}</p>}
     </div>
   )
 }

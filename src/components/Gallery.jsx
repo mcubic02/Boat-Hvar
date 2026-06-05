@@ -21,7 +21,7 @@ function Gallery() {
       <section id="gallery" className="gallery">
         <div className="gallery__inner">
           <h2 className="gallery__title">
-            Ko smo mi, sta iznajmljujemo i da se lako uanjmi sve priko wappa.
+            Who we are, what we rent, and how easy it is to book everything over WhatsApp.
           </h2>
 
           <p className="gallery__text">
