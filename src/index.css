@@ -174,7 +174,14 @@ a {
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(10, 37, 64, 0.35);
+  background:
+    linear-gradient(
+      180deg,
+      transparent 0%,
+      transparent 88%,
+      var(--background-color) 100%
+    ),
+    rgba(9, 10, 23, 0.5);
   pointer-events: none;
   z-index: 1;
 }
@@ -276,12 +283,7 @@ a {
 /* ── Gallery section ── */
 .gallery {
   padding: 4rem 1.5rem 5rem;
-  background: linear-gradient(
-    180deg,
-    var(--background-color-light) 0%,
-    var(--background-color) 14%,
-    var(--background-color) 100%
-  );
+  background: var(--background-color);
 }
 
 .gallery__inner {

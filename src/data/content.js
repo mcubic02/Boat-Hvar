@@ -168,14 +168,15 @@ export const safariTours = [
 export const fishingTrips = [
   {
     id: 1,
-    name: 'Sunrise Fishing Trip',
-    capacity: '6 guests',
-    price: '280 € / trip',
+    name: 'Fishing Trip',
+    capacity: '2 persons max',
+    price: 'from 100 € / person',
     description:
-      'A morning trip with an experienced fisherman. Equipment, bait and refreshments on board included. Ideal for beginners and enthusiasts.',
+      'A morning or evening trip — what you catch, you take home! Target species include orada, arbun, skuša, škrpina, šampjer, zubatac, lignja, lampuga and fratar.',
     image:
       'https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=800&q=80',
     imageAlt: 'Fishing from a boat at sea',
+    note: 'Included: equipment, licence, bait & fuel · duration 2–4 h',
   },
 ]
 
