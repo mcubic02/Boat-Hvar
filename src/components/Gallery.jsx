@@ -21,14 +21,11 @@ function Gallery() {
       <section id="gallery" className="gallery">
         <div className="gallery__inner">
           <h2 className="gallery__title">
-            Who we are, what we rent, and how easy it is to book everything over WhatsApp.
+            Authentic outdoor experiences that allow you to discover the Adriatic from a different perspective
           </h2>
 
           <p className="gallery__text">
-            Each Oasis Meu houseboat is handcrafted using premium sustainable
-            materials and cutting-edge technology, offering an unmatched blend
-            of comfort, style, and reliability on both water and land. With over
-            7 years of experience in
+          From boat rentals and fishing trips to quad and safari tours, our mission is to help guests explore the island’s natural beauty, hidden locations, and unique way of life.
           </p>
 
           <div className="gallery__actions">
