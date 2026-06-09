@@ -20,10 +20,15 @@ function MarqueeStrip({
   repeatCount = DEFAULT_REPEAT,
   className = '',
   ariaHidden = true,
+  paused = false,
 }) {
-  const rootClassName = className
-    ? `marquee-strip ${className}`
-    : 'marquee-strip'
+  const rootClassName = [
+    'marquee-strip',
+    paused && 'marquee-strip--paused',
+    className,
+  ]
+    .filter(Boolean)
+    .join(' ')
 
   return (
     <div className={rootClassName} aria-hidden={ariaHidden}>

@@ -1,23 +1,32 @@
+import { forwardRef } from 'react'
 import { WHATSAPP_URL } from '../data/content'
 import MarqueeStrip from './MarqueeStrip'
 import CarouselSlider from './CarouselSlider'
 import BoatCard from './BoatCard'
 import './ToursSection.css'
 
-function ToursSection({
-  id,
-  marqueeLabel,
-  items,
-  prevAriaLabel = 'Previous',
-  nextAriaLabel = 'Next',
-  showArrows,
-  footnote,
-}) {
+const ToursSection = forwardRef(function ToursSection(
+  {
+    id,
+    marqueeLabel,
+    items,
+    prevAriaLabel = 'Previous',
+    nextAriaLabel = 'Next',
+    showArrows,
+    footnote,
+    marqueeActive = false,
+  },
+  ref
+) {
   if (!items.length) return null
 
   return (
-    <div id={id} className="tours-section">
-      <MarqueeStrip label={marqueeLabel} className="tours-section__marquee" />
+    <div id={id} className="tours-section" ref={ref}>
+      <MarqueeStrip
+        label={marqueeLabel}
+        className="tours-section__marquee"
+        paused={!marqueeActive}
+      />
 
       <CarouselSlider
         items={items}
@@ -42,6 +51,6 @@ function ToursSection({
       {footnote && <p className="tours-section__footnote">{footnote}</p>}
     </div>
   )
-}
+})
 
 export default ToursSection

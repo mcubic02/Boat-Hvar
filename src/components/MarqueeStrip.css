@@ -14,6 +14,10 @@
   animation: marquee-strip-scroll 28s linear infinite;
 }
 
+.marquee-strip--paused .marquee-strip__track {
+  animation-play-state: paused;
+}
+
 .marquee-strip__group {
   display: flex;
   align-items: center;
