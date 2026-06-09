@@ -25,7 +25,7 @@ function Gallery() {
           </h2>
 
           <p className="gallery__text">
-          From boat rentals and fishing trips to quad and safari tours, our mission is to help guests explore the island’s natural beauty, hidden locations, and unique way of life.
+            From boat rentals and fishing trips to quad and safari tours, our mission is to help guests explore the island’s natural beauty, hidden locations, and unique way of life.
           </p>
 
           <div className="gallery__actions">

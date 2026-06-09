@@ -6,23 +6,12 @@ function Footer() {
       <div className="footer__card">
         <div className="footer__main">
           <div className="footer__left">
-            <form
-              className="footer__newsletter"
-              onSubmit={(e) => e.preventDefault()}
-            >
-              <input
-                type="email"
-                className="footer__newsletter-input"
-                placeholder="email address"
-                aria-label="email address"
-              />
-              <button type="submit" className="footer__newsletter-submit">
-                submit for newsletter
-              </button>
-            </form>
+            <p className="footer__tagline">
+              Private tours. Authentic experiences. Unforgettable memories.
+            </p>
 
             <div className="footer__brand-row">
-              <a href="#top" className="footer__brand" aria-label="Oasis menu">
+              <a href="#top" className="footer__brand" aria-label="Oasis Meu">
                 <span className="footer__brand-mark" aria-hidden="true">
                   <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="20" cy="20" r="19" stroke="currentColor" strokeWidth="1.2" />
@@ -41,7 +30,7 @@ function Footer() {
                   </svg>
                 </span>
                 <span className="footer__brand-name">
-                  O<span>asis</span> <span className="footer__brand-sub">menu</span>
+                  O<span>asis</span> <span className="footer__brand-sub">meu</span>
                 </span>
               </a>
 
@@ -54,23 +43,12 @@ function Footer() {
 
           <nav className="footer__menus" aria-label="Footer">
             <div className="footer__col">
-              <h3 className="footer__col-title">OASIS MENU</h3>
+              <h3 className="footer__col-title">IME OBJEKTA</h3>
               <ul>
-                <li><a href="#top">home</a></li>
-                <li><a href="#rent">rent</a></li>
-                <li><a href="#buy">buy</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#blog">blog</a></li>
-              </ul>
-            </div>
-
-            <div className="footer__col">
-              <h3 className="footer__col-title">SOCIALS</h3>
-              <ul>
-                <li><a href="#" target="_blank" rel="noreferrer">linkedin</a></li>
-                <li><a href="#" target="_blank" rel="noreferrer">youtube</a></li>
-                <li><a href="#" target="_blank" rel="noreferrer">tiktok</a></li>
-                <li><a href="#" target="_blank" rel="noreferrer">instagram</a></li>
+                <li><a href="#boat-tours">Boat Rental</a></li>
+                <li><a href="#quad-tours">Quad Tours</a></li>
+                <li><a href="#safari-tours">Safari Tour</a></li>
+                <li><a href="#fishing-tours">Fishing Trips</a></li>
               </ul>
             </div>
           </nav>

@@ -9,10 +9,22 @@ function CarouselSlider({
   nextAriaLabel = 'Next',
   showArrows,
   className = '',
+  activeIndex: controlledIndex,
+  onIndexChange,
 }) {
-  const [activeIndex, setActiveIndex] = useState(0)
+  const [internalIndex, setInternalIndex] = useState(0)
 
   if (!items.length) return null
+
+  const isControlled = controlledIndex != null
+  const activeIndex = isControlled ? controlledIndex : internalIndex
+
+  const setActiveIndex = (updater) => {
+    const next =
+      typeof updater === 'function' ? updater(activeIndex) : updater
+    if (!isControlled) setInternalIndex(next)
+    onIndexChange?.(next)
+  }
 
   const shouldShowArrows = showArrows ?? items.length > 1
 

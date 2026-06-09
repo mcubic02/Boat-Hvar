@@ -5,7 +5,7 @@
   min-height: 204px;
   border-radius: 10px;
   background: var(--font-color);
-  padding: 1.25rem 1.5rem 3.25rem;
+  padding: 1.25rem 1.5rem 2.5rem;
 }
 
 .boat-card__content {
@@ -20,6 +20,8 @@
   flex: 1;
   min-width: 0;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .boat-card__name {
@@ -62,6 +64,8 @@
   color: var(--background-color);
   opacity: 0.85;
   max-width: 340px;
+  margin-top: auto;
+  padding-top: 1.25rem;
 }
 
 .boat-card__note {
@@ -93,7 +97,7 @@
 
 .boat-card__book {
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
   display: inline-flex;
@@ -134,6 +138,6 @@
   }
 
   .boat-card {
-    padding-bottom: 3.5rem;
+    padding-bottom: 4.75rem;
   }
 }

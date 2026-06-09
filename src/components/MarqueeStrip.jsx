@@ -8,7 +8,7 @@ function MarqueeGroup({ label, repeatCount }) {
     <div className="marquee-strip__group">
       {Array.from({ length: repeatCount }, (_, index) => (
         <span key={index} className="marquee-strip__item">
-          {label} //
+          {'//\u00A0\u00A0'}{label}{'\u00A0\u00A0'}
         </span>
       ))}
     </div>

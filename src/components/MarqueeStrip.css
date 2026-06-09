@@ -17,9 +17,7 @@
 .marquee-strip__group {
   display: flex;
   align-items: center;
-  gap: 10px;
   flex-shrink: 0;
-  padding-right: 10px;
 }
 
 .marquee-strip__item {
@@ -32,10 +30,6 @@
   color: #383740;
   white-space: nowrap;
   text-transform: uppercase;
-}
-
-.marquee-strip__track > .marquee-strip__group:first-child .marquee-strip__item:first-child::before {
-  content: '// ';
 }
 
 @keyframes marquee-strip-scroll {

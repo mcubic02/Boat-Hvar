@@ -1,9 +1,9 @@
 .tours-section__marquee {
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
 }
 
 .tours-section + .tours-section {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .tours-section__footnote {

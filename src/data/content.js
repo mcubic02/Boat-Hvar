@@ -50,6 +50,22 @@ export const reviews = [
     text: 'Best boat trip on our Croatia vacation. The captain spoke excellent English and knew every hidden spot around Pakleni islands.',
     date: 'June 2025',
   },
+  {
+    id: 4,
+    name: 'Sophie L.',
+    location: 'France',
+    rating: 5,
+    text: 'Absolutely magical day! Crystal clear water, friendly crew and a route perfectly tailored to what we wanted. We swam at the most beautiful coves of our trip.',
+    date: 'September 2025',
+  },
+  {
+    id: 5,
+    name: 'James & Emily',
+    location: 'United Kingdom',
+    rating: 5,
+    text: 'Highly recommend! Everything was smooth from booking to drop-off. The skipper made our day relaxed and fun, and the views were unforgettable.',
+    date: 'July 2025',
+  },
 ]
 
 export const WHATSAPP_URL = 'https://wa.me/385911234567'
