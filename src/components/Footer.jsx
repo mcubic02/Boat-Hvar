@@ -35,8 +35,7 @@ function Footer() {
               </a>
 
               <div className="footer__contact">
-                <span>21000 Split, Croatia</span>
-                <a href="tel:+385098860853">+385 098 860 853</a>
+                <span>Ivan Dolac, Zavala, Sv. Nedjelja</span>
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@ import './BoatTours.css'
 const TOUR_SECTIONS = [
   {
     id: 'boat-tours',
-    marqueeLabel: 'BOAT TOURS',
+    marqueeLabel: 'PRIVATE BOAT EXCURSIONS',
     items: boats,
     prevAriaLabel: 'Previous boat',
     nextAriaLabel: 'Next boat',

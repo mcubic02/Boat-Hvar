@@ -4,7 +4,7 @@ const heroServices = [
   { label: 'Boat rental', href: '#boat-tours' },
   { label: 'Quad tours', href: '#quad-tours' },
   { label: 'Safari tour', href: '#safari-tours' },
-  { label: 'Fishing trips', href: '#fishing-trips' },
+  { label: 'Fishing charter', href: '#fishing-trips' },
 ]
 
 function Hero() {
