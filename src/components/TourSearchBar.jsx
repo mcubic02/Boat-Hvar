@@ -21,8 +21,8 @@ function TourSearchBar({
     <div className="tour-search">
       <div className="tour-search__bar">
         <div className="tour-search__filters">
-          <label className="tour-search__select-wrap">
-            <span className="sr-only">Number of people</span>
+          <label className="tour-search__field">
+            <span className="tour-search__label">Number of people:</span>
             <select
               className="tour-search__select"
               value={peopleFilter ?? ''}
@@ -39,8 +39,8 @@ function TourSearchBar({
             </select>
           </label>
 
-          <label className="tour-search__select-wrap">
-            <span className="sr-only">Price range</span>
+          <label className="tour-search__field">
+            <span className="tour-search__label">Price:</span>
             <select
               className="tour-search__select"
               value={priceFilterIndex >= 0 ? priceFilterIndex : 0}

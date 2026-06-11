@@ -160,7 +160,7 @@ export const quads = [
     description:
       'Our top-spec quad for the most demanding off-road routes. More power for rocky terrain, sea-view trails and hidden island roads.',
     image:
-      '/images/Quad.png',
+      '/images/Quad2.png',
     imageAlt: 'Linhai Landforce 650L Pro quad ATV',
     note: 'Ivan Dolac · Zavala · Sv. Nedilja',
   },
@@ -184,7 +184,7 @@ export const safariTours = [
 export const fishingTrips = [
   {
     id: 1,
-    name: 'Fishing Trip',
+    name: 'Fishing Charter',
     capacity: '2 persons max',
     price: 'from 100 € / person',
     description:
