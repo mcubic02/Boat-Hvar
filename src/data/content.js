@@ -78,7 +78,7 @@ export const boats = [
     price: '180 € / day',
     description:
       'A fast and agile speedboat ideal for exploring hidden coves and the Pakleni islands. Perfect for groups looking for a day full of adventure at sea.',
-    image: '/images/SpeedBoat.jpg',
+    image: '/images/SpeedBoat.png',
     imageAlt: 'Speedboat at sea',
     note: 'drivers licence needed · fuel not included',
   },
@@ -89,7 +89,7 @@ export const boats = [
     price: '90 € / day',
     description:
       'A traditional Dalmatian pasara for relaxed exploring of the surrounding coves and beaches. Easy to handle and ideal for a calmer day at sea.',
-    image: '/images/Pasara.jpg',
+    image: '/images/Pasara.png',
     imageAlt: 'Pasara boat at sea',
     note: 'no licence needed · fuel included',
   },
@@ -148,7 +148,7 @@ export const quads = [
     description:
       'Real off-road experience — rocky terrain, sea-view trails and hidden island routes. Explore Hvar like a local with a professional guide.',
     image:
-      'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80',
+      '/images/Quad.png',
     imageAlt: 'Linhai Landforce 550L quad ATV',
     note: 'Ivan Dolac · Zavala · Sv. Nedilja',
   },
@@ -160,7 +160,7 @@ export const quads = [
     description:
       'Our top-spec quad for the most demanding off-road routes. More power for rocky terrain, sea-view trails and hidden island roads.',
     image:
-      'https://images.unsplash.com/photo-1622185135695-4799a5969de8?w=800&q=80',
+      '/images/Quad.png',
     imageAlt: 'Linhai Landforce 650L Pro quad ATV',
     note: 'Ivan Dolac · Zavala · Sv. Nedilja',
   },
@@ -175,7 +175,7 @@ export const safariTours = [
     description:
       'Off-road adventure with amazing viewpoints, led by a professional guide. Explore Hvar like a local — rocky terrain, sea-view trails and hidden island routes. Equipment included.',
     image:
-      'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80',
+      '/images/SafariTour.png',
     imageAlt: 'Quad safari tour on Hvar',
     note: 'Duration ~2.5h',
   },
@@ -190,7 +190,7 @@ export const fishingTrips = [
     description:
       'A morning or evening trip — what you catch, you take home! Target species include orada, arbun, skuša, škrpina, šampjer, zubatac, lignja, lampuga and fratar.',
     image:
-      'https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=800&q=80',
+      '/images/Fishing.png',
     imageAlt: 'Fishing from a boat at sea',
     note: 'Included: equipment, licence, bait & fuel · duration 2–4 h',
   },

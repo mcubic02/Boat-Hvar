@@ -18,13 +18,15 @@ function BoatCard({
           <h3 className="boat-card__name">{name}</h3>
           <p className="boat-card__meta">{capacity}</p>
           <p className="boat-card__price">{price}</p>
-          <p className="boat-card__description">{description}</p>
-          {note && <p className="boat-card__note">{note}</p>}
+          <div className="boat-card__text-block">
+            <p className="boat-card__description">{description}</p>
+            {note && <p className="boat-card__note">{note}</p>}
+          </div>
         </div>
+      </div>
 
-        <div className="boat-card__image-wrap">
-          <img src={image} alt={imageAlt} className="boat-card__image" />
-        </div>
+      <div className="boat-card__image-wrap">
+        <img src={image} alt={imageAlt} className="boat-card__image" />
       </div>
 
       <a

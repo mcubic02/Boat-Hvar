@@ -44,10 +44,10 @@ function Footer() {
             <div className="footer__col">
               <h3 className="footer__col-title">IME OBJEKTA</h3>
               <ul>
-                <li><a href="#boat-tours">Boat Rental</a></li>
+                <li><a href="#boat-tours">Private Boat Excursions</a></li>
                 <li><a href="#quad-tours">Quad Tours</a></li>
                 <li><a href="#safari-tours">Safari Tour</a></li>
-                <li><a href="#fishing-tours">Fishing Trips</a></li>
+                <li><a href="#fishing-tours">Fishing Charters</a></li>
               </ul>
             </div>
           </nav>
