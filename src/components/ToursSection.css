@@ -6,6 +6,19 @@
   margin-top: 5rem;
 }
 
+.tours-section__empty {
+  width: 100%;
+  max-width: 1136px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  color: var(--font-color);
+  opacity: 0.65;
+  text-align: center;
+}
+
 .tours-section__footnote {
   width: 100%;
   max-width: 1136px;

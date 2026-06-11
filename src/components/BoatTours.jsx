@@ -1,5 +1,11 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { boats, quads, safariTours, fishingTrips } from '../data/content'
+import {
+  buildSearchIndex,
+  filterTourItems,
+  findSearchMatch,
+} from '../utils/tourSearch'
+import TourSearchBar from './TourSearchBar'
 import ToursSection from './ToursSection'
 import './BoatTours.css'
 
@@ -41,6 +47,29 @@ function BoatTours() {
   const sectionRefs = useRef({})
   const visibilityRef = useRef({})
   const [activeSectionId, setActiveSectionId] = useState('boat-tours')
+  const [searchQuery, setSearchQuery] = useState('')
+  const [peopleFilter, setPeopleFilter] = useState(null)
+  const [priceFilter, setPriceFilter] = useState(null)
+  const [cardIndices, setCardIndices] = useState({})
+
+  const filteredSections = useMemo(
+    () =>
+      TOUR_SECTIONS.map((section) => ({
+        ...section,
+        items: filterTourItems(section.items, section.id, {
+          people: peopleFilter,
+          priceMin: priceFilter?.min ?? null,
+          priceMax: priceFilter?.max ?? null,
+          query: searchQuery,
+        }),
+      })).filter((section) => section.items.length > 0),
+    [peopleFilter, priceFilter, searchQuery]
+  )
+
+  const hasActiveFilters =
+    searchQuery.trim().length > 0 ||
+    peopleFilter != null ||
+    (priceFilter && (priceFilter.min != null || priceFilter.max != null))
 
   useEffect(() => {
     const pickMostVisibleSection = () => {
@@ -61,13 +90,13 @@ function BoatTours() {
       { threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1] }
     )
 
-    SECTION_IDS.forEach((id) => {
-      const el = sectionRefs.current[id]
+    filteredSections.forEach((section) => {
+      const el = sectionRefs.current[section.id]
       if (el) observer.observe(el)
     })
 
     return () => observer.disconnect()
-  }, [])
+  }, [filteredSections])
 
   useEffect(() => {
     const syncFromHash = () => {
@@ -82,23 +111,82 @@ function BoatTours() {
     return () => window.removeEventListener('hashchange', syncFromHash)
   }, [])
 
+  useEffect(() => {
+    setCardIndices((prev) => {
+      const next = { ...prev }
+      let changed = false
+
+      filteredSections.forEach((section) => {
+        const current = next[section.id] ?? 0
+        const maxIndex = Math.max(0, section.items.length - 1)
+        const clamped = Math.min(current, maxIndex)
+
+        if (clamped !== current) {
+          next[section.id] = clamped
+          changed = true
+        }
+      })
+
+      return changed ? next : prev
+    })
+  }, [filteredSections])
+
+  useEffect(() => {
+    const query = searchQuery.trim()
+    if (!query || !filteredSections.length) return
+
+    const match = findSearchMatch(query, buildSearchIndex(filteredSections))
+    if (!match) return
+
+    setActiveSectionId(match.sectionId)
+    setCardIndices((prev) => ({ ...prev, [match.sectionId]: match.itemIndex }))
+
+    window.history.replaceState(null, '', `#${match.sectionId}`)
+
+    requestAnimationFrame(() => {
+      sectionRefs.current[match.sectionId]?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
+    })
+  }, [searchQuery, filteredSections])
+
   return (
     <section className="tours">
-      {TOUR_SECTIONS.map((section) => (
-        <ToursSection
-          key={section.id}
-          ref={(el) => {
-            sectionRefs.current[section.id] = el
-          }}
-          id={section.id}
-          marqueeLabel={section.marqueeLabel}
-          items={section.items}
-          prevAriaLabel={section.prevAriaLabel}
-          nextAriaLabel={section.nextAriaLabel}
-          footnote={section.footnote}
-          marqueeActive={activeSectionId === section.id}
-        />
-      ))}
+      <TourSearchBar
+        query={searchQuery}
+        onQueryChange={setSearchQuery}
+        peopleFilter={peopleFilter}
+        onPeopleFilterChange={setPeopleFilter}
+        priceFilter={priceFilter}
+        onPriceFilterChange={setPriceFilter}
+      />
+
+      {filteredSections.length > 0 ? (
+        filteredSections.map((section) => (
+          <ToursSection
+            key={section.id}
+            ref={(el) => {
+              sectionRefs.current[section.id] = el
+            }}
+            id={section.id}
+            marqueeLabel={section.marqueeLabel}
+            items={section.items}
+            prevAriaLabel={section.prevAriaLabel}
+            nextAriaLabel={section.nextAriaLabel}
+            footnote={section.footnote}
+            marqueeActive={activeSectionId === section.id}
+            activeCardIndex={cardIndices[section.id] ?? 0}
+            onCardIndexChange={(index) =>
+              setCardIndices((prev) => ({ ...prev, [section.id]: index }))
+            }
+          />
+        ))
+      ) : (
+        hasActiveFilters && (
+          <p className="tours__empty">No tours match your search or filters.</p>
+        )
+      )}
     </section>
   )
 }
