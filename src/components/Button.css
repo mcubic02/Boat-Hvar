@@ -9,19 +9,20 @@
   gap: 10px;
   border: none;
   border-radius: 30px;
-  background: #ece4f424;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  color: var(--font-color);
+  background: var(--background-color);
+  color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1;
   letter-spacing: 0;
   cursor: pointer;
   text-decoration: none;
   white-space: nowrap;
-  transition: background 0.25s ease, transform 0.25s ease;
+  transition:
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
 .hero-button::before {
@@ -30,7 +31,13 @@
   inset: 0;
   border-radius: 30px;
   padding: 1px;
-  background: linear-gradient(84.64deg, var(--font-color) -1.69%, #8e8a85 97.21%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 255, 255, 0.55) 30%,
+    rgba(255, 255, 255, 0.15) 65%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
@@ -43,10 +50,16 @@
 }
 
 .hero-button:hover {
-  background: #ece4f438;
+  background: #a8b2cb;
   transform: translateY(-1px);
 }
 
 .hero-button:active {
+  background: #b8c2d6;
   transform: translateY(0);
+}
+
+.hero-button:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
 }

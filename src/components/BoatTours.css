@@ -1,5 +1,5 @@
 .tours {
-  background: var(--background-color);
+  background: transparent;
   padding: 4rem 0 10rem;
   overflow: hidden;
 }

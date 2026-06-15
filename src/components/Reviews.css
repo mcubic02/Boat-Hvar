@@ -44,7 +44,7 @@
   align-items: center;
   gap: 6px;
   padding: 1.75rem 1rem;
-  background: var(--background-color);
+  background: transparent;
 }
 
 .reviews__dot {

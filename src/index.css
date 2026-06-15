@@ -17,7 +17,8 @@
   --color-text: #1a2b3c;
   --color-muted: #5a6b7d;
   --color-white: #ffffff;
-  --background-color: #090a17;
+  --background-color: #99a3bf;
+  --page-gradient: linear-gradient(180deg, #b8c2d6 0%, #99a3bf 12%, #99a3bf 100%);
   --font-color: #f4ede4;
   --background-color-light: color-mix(in srgb, var(--background-color) 75%, var(--font-color) 12%);
 
@@ -35,6 +36,8 @@
 
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
+  background: var(--page-gradient);
 }
 
 body {
@@ -42,12 +45,12 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--color-text);
-  background: var(--background-color);
+  background: transparent;
   -webkit-font-smoothing: antialiased;
 }
 
 main {
-  background: var(--background-color);
+  background: transparent;
 }
 
 img {
@@ -151,73 +154,6 @@ a {
   color: rgba(255, 255, 255, 0.75);
 }
 
-/* ── Hero ── */
-.hero {
-  position: relative;
-  min-height: 100svh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  background: #0a2540;
-}
-
-.hero__video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.hero__overlay {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      180deg,
-      transparent 0%,
-      transparent 88%,
-      var(--background-color) 100%
-    ),
-    rgba(9, 10, 23, 0.5);
-  pointer-events: none;
-  z-index: 1;
-}
-
-.hero__content {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem 1.5rem;
-  max-width: 900px;
-}
-
-.hero__title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: clamp(18px, 2.5vw, 32px);
-  line-height: 100%;
-  letter-spacing: 0;
-  color: var(--font-color);
-  margin-bottom: 2.5rem;
-  white-space: nowrap;
-}
-
-.hero__buttons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
 /* ── Quick Info ── */
 .quick-info {
   padding: 5rem 0;
@@ -283,7 +219,7 @@ a {
 /* ── Gallery section ── */
 .gallery {
   padding: 4rem 1.5rem 5rem;
-  background: var(--background-color);
+  background: transparent;
 }
 
 .gallery__inner {
@@ -519,7 +455,4 @@ a {
     gap: 0.5rem;
   }
 
-  .hero__buttons {
-    flex-direction: column;
-  }
 }

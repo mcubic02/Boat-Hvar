@@ -3,7 +3,7 @@
   min-height: 31px;
   overflow: hidden;
   padding: 10px;
-  background: var(--background-color);
+  background: transparent;
   display: flex;
   align-items: center;
 }
@@ -31,7 +31,7 @@
   line-height: 20px;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #383740;
+  color: #abb2c6;
   white-space: nowrap;
   text-transform: uppercase;
 }

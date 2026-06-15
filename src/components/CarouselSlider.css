@@ -22,7 +22,7 @@
   border: none;
   border-radius: 5px;
   background: var(--font-color);
-  color: var(--background-color);
+  color: #5e6c93;
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
