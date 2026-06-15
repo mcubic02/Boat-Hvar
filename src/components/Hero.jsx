@@ -4,7 +4,8 @@ import './Hero.css'
 const heroServices = [
   { label: 'Boat Rental', href: '#boat-tours' },
   { label: 'Quad Tours', href: '#quad-tours' },
-  { label: 'Fishing Trips', href: '#fishing-tours' },
+  { label: 'Safari Tours', href: '#safari-tours' },
+  { label: 'Fishing Charter', href: '#fishing-tours' },
 ]
 
 const heroPhotosLeft = [

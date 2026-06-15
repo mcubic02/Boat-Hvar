@@ -68,7 +68,8 @@ export const reviews = [
   },
 ]
 
-export const WHATSAPP_URL = 'https://wa.me/385911234567'
+export const WHATSAPP_PRIMARY_URL = 'https://wa.me/385915795737'
+export const WHATSAPP_DEFAULT_URL = 'https://wa.me/385919795375'
 
 export const boats = [
   {
@@ -81,6 +82,7 @@ export const boats = [
     image: '/images/SpeedBoat.png',
     imageAlt: 'Speedboat at sea',
     note: 'drivers licence needed · fuel not included',
+    bookUrl: WHATSAPP_DEFAULT_URL,
   },
   {
     id: 1,
@@ -92,6 +94,7 @@ export const boats = [
     image: '/images/Pasara.png',
     imageAlt: 'Pasara boat at sea',
     note: 'no licence needed · fuel included',
+    bookUrl: WHATSAPP_DEFAULT_URL,
   },
   {
     id: 2,
@@ -103,6 +106,7 @@ export const boats = [
     image: '/images/Kayak.avif',
     imageAlt: 'Kayak on the sea',
     note: 'no licence needed',
+    bookUrl: WHATSAPP_DEFAULT_URL,
   },
   {
     id: 3,
@@ -114,6 +118,7 @@ export const boats = [
     image: '/images/Sunbird.jpeg',
     imageAlt: 'Sunbird boat at sea',
     note: 'licence needed',
+    bookUrl: WHATSAPP_PRIMARY_URL,
   },
   {
     id: 4,
@@ -125,6 +130,7 @@ export const boats = [
     image: '/images/JokerCoaster.jpg',
     imageAlt: 'Joker Coaster speedboat at sea',
     note: 'licence needed',
+    bookUrl: WHATSAPP_PRIMARY_URL,
   },
   {
     id: 5,
@@ -136,6 +142,7 @@ export const boats = [
     image: '/images/JetSki.jpg',
     imageAlt: 'Jet ski at sea',
     note: 'no licence needed',
+    bookUrl: WHATSAPP_PRIMARY_URL,
   },
 ]
 
@@ -151,6 +158,7 @@ export const quads = [
       '/images/Quad.png',
     imageAlt: 'Linhai Landforce 550L quad ATV',
     note: 'Ivan Dolac · Zavala · Sv. Nedilja',
+    bookUrl: WHATSAPP_DEFAULT_URL,
   },
   {
     id: 2,
@@ -163,6 +171,7 @@ export const quads = [
       '/images/Quad2.png',
     imageAlt: 'Linhai Landforce 650L Pro quad ATV',
     note: 'Ivan Dolac · Zavala · Sv. Nedilja',
+    bookUrl: WHATSAPP_DEFAULT_URL,
   },
 ]
 
@@ -178,6 +187,7 @@ export const safariTours = [
       '/images/SafariTour.png',
     imageAlt: 'Quad safari tour on Hvar',
     note: 'Duration ~2.5h',
+    bookUrl: WHATSAPP_DEFAULT_URL,
   },
 ]
 
@@ -193,6 +203,7 @@ export const fishingTrips = [
       '/images/Fishing.png',
     imageAlt: 'Fishing from a boat at sea',
     note: 'Included: equipment, licence, bait & fuel · duration 2–4 h',
+    bookUrl: WHATSAPP_DEFAULT_URL,
   },
 ]
 

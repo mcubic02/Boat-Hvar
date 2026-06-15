@@ -1,5 +1,4 @@
 import { forwardRef } from 'react'
-import { WHATSAPP_URL } from '../data/content'
 import MarqueeStrip from './MarqueeStrip'
 import CarouselSlider from './CarouselSlider'
 import BoatCard from './BoatCard'
@@ -46,7 +45,7 @@ const ToursSection = forwardRef(function ToursSection(
               note={item.note}
               image={item.image}
               imageAlt={item.imageAlt}
-              bookUrl={WHATSAPP_URL}
+              bookUrl={item.bookUrl}
             />
           )}
         />

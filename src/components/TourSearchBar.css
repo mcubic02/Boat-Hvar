@@ -95,7 +95,7 @@
 }
 
 .tour-search__input::placeholder {
-  color: rgba(244, 237, 228, 0.55);
+  color: var(--font-color);
 }
 
 .tour-search__input:focus {
