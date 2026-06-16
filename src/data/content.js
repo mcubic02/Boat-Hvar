@@ -207,6 +207,25 @@ export const fishingTrips = [
   },
 ]
 
+export const locationInfo = {
+  hero:
+    "Boat & quad adventures from Ivan Dolac, Zavala and Sv. Nedjelja — quiet villages on Hvar's south coast.",
+  places: [
+    {
+      name: 'Ivan Dolac',
+      text: 'A peaceful fishing village on Hvar\'s south shore — crystal-clear water, quiet coves and an easy starting point for boat trips.',
+    },
+    {
+      name: 'Zavala',
+      text: 'A laid-back coastal spot surrounded by vineyards and olive groves, with wide-open views across the Adriatic.',
+    },
+    {
+      name: 'Sv. Nedjelja',
+      text: 'A hillside village above the coast, known for its wine cellars, rugged trails and some of the island\'s best viewpoints.',
+    },
+  ],
+}
+
 export const galleryImages = [
   {
     id: 1,

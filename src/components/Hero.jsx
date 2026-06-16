@@ -1,4 +1,5 @@
 import Button from './Button'
+import { locationInfo } from '../data/content'
 import './Hero.css'
 
 const heroServices = [
@@ -67,6 +68,8 @@ function Hero() {
 
       <div className="hero__content">
         <h1 className="hero__title">EXPLORE THE CROATIAN COAST YOUR WAY</h1>
+
+        <p className="hero__subtitle">{locationInfo.hero}</p>
 
         <div className="hero__buttons">
           {heroServices.map((service) => (

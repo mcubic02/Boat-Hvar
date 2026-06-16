@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { galleryImages } from '../data/content'
+import { galleryImages, locationInfo } from '../data/content'
 import GalleryPopup from './GalleryPopup'
 import Button from './Button'
 
@@ -32,6 +32,15 @@ function Gallery() {
             <Button onClick={() => openPopup(0)}>
               Gallery
             </Button>
+          </div>
+
+          <div className="gallery__locations">
+            {locationInfo.places.map((place) => (
+              <article key={place.name} className="gallery__location">
+                <h3 className="gallery__location-name">{place.name}</h3>
+                <p className="gallery__location-text">{place.text}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>

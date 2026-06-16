@@ -74,8 +74,20 @@
   line-height: 100%;
   letter-spacing: 0;
   color: var(--font-color);
-  margin-bottom: 2.5rem;
+  margin: 0 0 1.25rem;
   white-space: nowrap;
+}
+
+.hero__subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: clamp(13px, 1.6vw, 15px);
+  line-height: 1.55;
+  letter-spacing: 0.02em;
+  color: color-mix(in srgb, var(--font-color) 88%, transparent);
+  max-width: 36rem;
+  margin: -1.25rem auto 2rem;
+  padding: 0 0.5rem;
 }
 
 .hero__buttons {
@@ -106,7 +118,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .hero__photos {
     opacity: 0.35;
   }

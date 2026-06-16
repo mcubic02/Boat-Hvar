@@ -10,7 +10,7 @@
   border: none;
   border-radius: 30px;
   background: var(--background-color);
-  color: #fff;
+  color: var(--font-color);
   font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
@@ -21,7 +21,6 @@
   white-space: nowrap;
   transition:
     background 0.2s ease,
-    box-shadow 0.2s ease,
     transform 0.2s ease;
 }
 
@@ -33,10 +32,10 @@
   padding: 1px;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(255, 255, 255, 0.55) 30%,
-    rgba(255, 255, 255, 0.15) 65%,
-    rgba(255, 255, 255, 0.05) 100%
+    color-mix(in srgb, var(--font-color) 95%, transparent) 0%,
+    color-mix(in srgb, var(--font-color) 55%, transparent) 30%,
+    color-mix(in srgb, var(--font-color) 15%, transparent) 65%,
+    color-mix(in srgb, var(--font-color) 5%, transparent) 100%
   );
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
@@ -60,6 +59,6 @@
 }
 
 .hero-button:focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline: 2px solid var(--font-color);
   outline-offset: 2px;
 }
