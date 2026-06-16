@@ -36,13 +36,30 @@
   transform: scale(1.04);
 }
 
+/* strelice ispod kartica — samo na mobitelu */
+.carousel-slider__controls {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .carousel-slider {
     flex-direction: column;
     gap: 1.25rem;
   }
 
-  .carousel-slider__arrow {
+  .carousel-slider > .carousel-slider__arrow {
     display: none;
+  }
+
+  .carousel-slider__controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .carousel-slider__controls .carousel-slider__arrow {
+    width: 40px;
+    height: 40px;
   }
 }

@@ -36,6 +36,7 @@ function Footer() {
 
               <div className="footer__contact">
                 <span>Ivan Dolac, Zavala, Sv. Nedjelja</span>
+                <a href="tel:+38598860853">+385 98 860 853</a>
               </div>
             </div>
           </div>

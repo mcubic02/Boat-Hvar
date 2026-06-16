@@ -153,12 +153,17 @@
 
 @media (max-width: 768px) {
   .boat-card {
-    padding: 1.25rem 1.25rem 4.75rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+    padding: 1.25rem;
   }
 
   .boat-card__content {
+    order: 1;
     position: static;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding-right: 0;
   }
 
@@ -173,19 +178,29 @@
     overflow: visible;
   }
 
-  .boat-card__image-wrap {
+  .boat-card__book {
+    order: 2;
     position: static;
-    max-width: 100%;
+    transform: none;
+    align-self: flex-end;
+    margin: 1.25rem 0 1.5rem;
+  }
+
+  .boat-card__book:hover {
+    transform: translateY(-1px);
+  }
+
+  .boat-card__image-wrap {
+    order: 3;
+    position: static;
+    display: flex;
     justify-content: center;
-    margin: 0 1.25rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
   }
 
   .boat-card__image {
     max-height: 200px;
-  }
-
-  .boat-card {
-    height: auto;
-    min-height: 204px;
   }
 }
