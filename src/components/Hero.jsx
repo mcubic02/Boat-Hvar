@@ -13,17 +13,17 @@ const heroPhotosLeft = [
   {
     src: '/images/SpeedBoat.png',
     alt: 'Speed boat on turquoise sea',
-    className: 'hero__photo hero__photo--tilt-left',
+    className: 'hero__photo hero__photo--tilt-left hero__photo--m1',
   },
   {
     src: '/images/Quad.png',
     alt: 'Quad tour on Hvar',
-    className: 'hero__photo hero__photo--tilt-right',
+    className: 'hero__photo hero__photo--tilt-right hero__photo--m2',
   },
   {
     src: '/images/Kayak.avif',
     alt: 'Kayak on the sea',
-    className: 'hero__photo hero__photo--tilt-left',
+    className: 'hero__photo hero__photo--tilt-left hero__photo--m3',
   },
 ]
 
@@ -31,23 +31,23 @@ const heroPhotosRight = [
   {
     src: '/images/Fishing.png',
     alt: 'Fishing trip catch',
-    className: 'hero__photo hero__photo--tilt-right',
+    className: 'hero__photo hero__photo--tilt-right hero__photo--m4',
   },
   {
     src: '/images/Pasara.png',
     alt: 'Pasara boat at sea',
-    className: 'hero__photo hero__photo--tilt-left',
+    className: 'hero__photo hero__photo--tilt-left hero__photo--m5',
   },
   {
     src: '/images/SafariTour.png',
     alt: 'Quad safari tour overlooking the sea',
-    className: 'hero__photo hero__photo--tilt-right',
+    className: 'hero__photo hero__photo--tilt-right hero__photo--m6',
   },
 ]
 
 function Hero() {
   return (
-    <header className="hero">
+    <header id="top" className="hero">
       <div className="hero__photos" aria-hidden="true">
         <div className="hero__column hero__column--left">
           {heroPhotosLeft.map((photo) => (
@@ -67,9 +67,16 @@ function Hero() {
       </div>
 
       <div className="hero__content">
-        <h1 className="hero__title">EXPLORE THE CROATIAN COAST YOUR WAY</h1>
+        <h1 className="hero__title">
+          <span className="hero__title-line">EXPLORE THE</span>
+          <span className="hero__title-line">CROATIAN COAST</span>
+          <span className="hero__title-line">YOUR WAY</span>
+        </h1>
 
-        <p className="hero__subtitle">{locationInfo.hero}</p>
+        <p className="hero__subtitle hero__subtitle--desktop">{locationInfo.hero}</p>
+        <p className="hero__subtitle hero__subtitle--mobile">
+          boat rental | quad tours |<br />fishing trips | safari tour
+        </p>
 
         <div className="hero__buttons">
           {heroServices.map((service) => (
