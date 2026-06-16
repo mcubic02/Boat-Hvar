@@ -144,6 +144,9 @@
   .hero {
     align-items: center;
     justify-content: flex-start;
+    height: 100svh;
+    min-height: 100svh;
+    max-height: 100svh;
   }
 
   .hero__photos {
@@ -180,23 +183,24 @@
     transform: none;
   }
 
-  /* gornji klaster — 3 slike, uz desni rub */
+  /* Sve slike sidrene fiksno (rem) od vrha — ne pomiču se pri scrollu */
+  /* gornji klaster — 3 slike */
   .hero__photo--m1 {
-    top: 4%;
+    top: 2.25rem;
     right: 14%;
     transform: rotate(-7deg);
     z-index: 2;
   }
 
   .hero__photo--m4 {
-    top: 9%;
+    top: 4.5rem;
     right: -8%;
     transform: rotate(8deg);
     z-index: 3;
   }
 
   .hero__photo--m2 {
-    top: 23%;
+    top: 10.5rem;
     right: 2%;
     transform: rotate(-4deg);
     z-index: 1;
@@ -206,16 +210,16 @@
     display: none;
   }
 
-  /* donji klaster — 2 slike, uz desni rub */
+  /* donji klaster — 2 slike */
   .hero__photo--m5 {
-    bottom: 15%;
+    top: 27rem;
     right: 6%;
     transform: rotate(-6deg);
     z-index: 2;
   }
 
   .hero__photo--m6 {
-    bottom: 1%;
+    top: 34rem;
     right: -8%;
     transform: rotate(8deg);
     z-index: 1;

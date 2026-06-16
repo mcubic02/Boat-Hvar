@@ -5,6 +5,7 @@
   padding: 0 1.5rem;
 }
 
+/* ── Desktop (original) ── */
 .tour-search__bar {
   display: flex;
   align-items: center;
@@ -36,8 +37,8 @@
 
 .tour-search__label {
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
   letter-spacing: 0.3px;
   color: #5e6c93;
   white-space: nowrap;
@@ -109,6 +110,56 @@
   color: var(--font-color);
 }
 
+/* filter dropdown wrapper — skriven na desktopu */
+.tour-search__filter {
+  display: none;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.tour-search__filter-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.tour-search__panel {
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  right: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 240px;
+  padding: 1.1rem;
+  border-radius: 12px;
+  background: var(--font-color);
+  box-shadow: 0 16px 40px rgba(10, 37, 64, 0.22);
+}
+
+.tour-search__panel .tour-search__field {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.45rem;
+}
+
+.tour-search__panel .tour-search__label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #3d4559;
+}
+
+.tour-search__panel .tour-search__select {
+  flex: none;
+  width: 100%;
+  height: 48px;
+  font-size: 15px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -148,5 +199,84 @@
 
   .tour-search__input-wrap {
     width: 100%;
+  }
+}
+
+/* ── Mobile — krem polje + kružni filter (kao na slici) ── */
+@media (max-width: 768px) {
+  .tour-search__bar {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0.75rem;
+    min-height: 0;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .tour-search__filters {
+    display: none;
+  }
+
+  .tour-search__input-wrap {
+    flex: 1;
+    width: auto;
+    height: 56px;
+    padding: 0 1.3rem;
+    background: var(--font-color);
+  }
+
+  .tour-search__input {
+    font-size: 17px;
+    color: #3d4559;
+  }
+
+  .tour-search__input::placeholder {
+    color: #8b93b0;
+  }
+
+  .tour-search__icon {
+    color: #8b93b0;
+  }
+
+  .tour-search__filter {
+    display: block;
+  }
+
+  .tour-search__filter-toggle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--font-color);
+    color: #8b93b0;
+    transition: opacity 0.2s ease, background 0.2s ease;
+  }
+
+  .tour-search__filter-toggle svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .tour-search__filter-toggle:hover {
+    opacity: 0.92;
+  }
+
+  .tour-search__filter-toggle--active {
+    background: #8b93b0;
+    color: var(--font-color);
+  }
+
+  .tour-search__filter-dot {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3d4559;
+  }
+
+  .tour-search__filter-toggle--active .tour-search__filter-dot {
+    background: var(--font-color);
   }
 }
