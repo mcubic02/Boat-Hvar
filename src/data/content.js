@@ -139,7 +139,7 @@ export const boats = [
     price: '50 € / 15 minutes',
     description:
       'A fast and agile jet ski ideal for exploring hidden coves and the Pakleni islands. Perfect for a single person looking for a day full of adventure at sea.',
-    image: '/images/JetSki.jpg',
+    image: '/images/JetSki.png',
     imageAlt: 'Jet ski at sea',
     note: 'no licence needed',
     bookUrl: WHATSAPP_PRIMARY_URL,

@@ -84,6 +84,7 @@
   letter-spacing: 0.4px;
   color: #3d4559;
   opacity: 0.85;
+  text-align: justify;
 }
 
 .boat-card__note {

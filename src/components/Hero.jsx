@@ -16,7 +16,7 @@ const heroPhotosLeft = [
     className: 'hero__photo hero__photo--tilt-left hero__photo--m1',
   },
   {
-    src: '/images/Quad.png',
+    src: '/images/Quad2.png',
     alt: 'Quad tour on Hvar',
     className: 'hero__photo hero__photo--tilt-right hero__photo--m2',
   },
