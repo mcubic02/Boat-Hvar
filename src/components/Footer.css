@@ -16,7 +16,7 @@
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: clamp(2rem, 6vw, 6rem);
-  align-items: start;
+  align-items: stretch;
 }
 
 /* ── Left side ── */
@@ -111,6 +111,13 @@
 .footer__menus {
   display: flex;
   justify-content: flex-end;
+  align-items: stretch;
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .footer__col-title {
@@ -126,7 +133,9 @@
 .footer__col ul {
   list-style: none;
   display: flex;
+  flex: 1;
   flex-direction: column;
+  justify-content: space-between;
   gap: 0.3rem;
 }
 
