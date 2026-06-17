@@ -130,9 +130,9 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .hero__photos {
-    opacity: 0.35;
+    opacity: 0.15;
   }
 
   .hero__title {
