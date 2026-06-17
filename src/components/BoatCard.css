@@ -151,13 +151,15 @@
   transform: translateX(-50%) translateY(-1px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
   .boat-card {
     display: flex;
     flex-direction: column;
     height: auto;
     min-height: 0;
-    padding: 1.25rem;
+    width: 100%;
+    max-width: 360px;
+    padding: 1rem 0.9rem;
   }
 
   .boat-card__content {
@@ -179,11 +181,11 @@
   }
 
   .boat-card__book {
-    order: 2;
+    order: 3;
     position: static;
     transform: none;
-    align-self: flex-end;
-    margin: 1.25rem 0 1.5rem;
+    align-self: center;
+    margin: 1.25rem 0 0.5rem;
   }
 
   .boat-card__book:hover {
@@ -191,16 +193,18 @@
   }
 
   .boat-card__image-wrap {
-    order: 3;
+    order: 2;
     position: static;
     display: flex;
     justify-content: center;
     width: 100%;
     max-width: 100%;
-    margin: 0;
+    margin-top: 2.75rem;
   }
 
   .boat-card__image {
-    max-height: 200px;
+    width: 100%;
+    height: auto;
+    max-height: none;
   }
 }
