@@ -226,6 +226,24 @@ export const locationInfo = {
   ],
 }
 
+export const destinations = [
+  {
+    id: 'scedro',
+    name: 'Šćedro',
+    text: 'A small, untouched island just south of Hvar, protected as a nature park. Its sheltered bays of Mostir and Lovišće offer calm, crystal-clear water, pine-shaded anchorages and a couple of family-run konobas — the perfect quiet escape away from the crowds.',
+  },
+  {
+    id: 'vis',
+    name: 'Otok Vis',
+    text: 'The farthest inhabited island from the mainland, with a wild, authentic charm all its own. Famous for the Blue Cave on nearby Biševo, the dramatic Stiniva cove and the charming towns of Vis and Komiža, it rewards anyone willing to go that little bit further.',
+  },
+  {
+    id: 'pakleni',
+    name: 'Pakleni Otoci',
+    text: 'A string of low, green islets right across from Hvar town, ringed by some of the clearest water in the Adriatic. Hidden coves, lively beach bars and the palm gardens of Palmižana make them the most popular day-trip destination in the area.',
+  },
+]
+
 export const galleryImages = [
   {
     id: 1,

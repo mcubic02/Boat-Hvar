@@ -1,0 +1,66 @@
+.destinations {
+  padding: 2rem 1.5rem 3rem;
+  background: transparent;
+}
+
+.destinations__inner {
+  max-width: 1136px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.destinations__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  color: var(--font-color);
+  margin: 0 0 1.75rem;
+}
+
+.destinations__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.destinations__card {
+  padding: 1.5rem 1.5rem;
+  border-radius: 10px;
+  background: var(--font-color);
+  text-align: left;
+}
+
+.destinations__name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: #3d4559;
+  margin: 0 0 0.75rem;
+}
+
+.destinations__text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  color: #3d4559;
+  opacity: 0.85;
+  margin: 0;
+  text-align: justify;
+}
+
+@media (max-width: 1050px) {
+  .destinations__grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+}
