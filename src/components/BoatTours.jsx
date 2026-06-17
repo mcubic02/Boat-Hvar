@@ -146,7 +146,7 @@ function BoatTours() {
     requestAnimationFrame(() => {
       sectionRefs.current[match.sectionId]?.scrollIntoView({
         behavior: 'smooth',
-        block: 'start',
+        block: 'center',
       })
     })
   }, [searchQuery, filteredSections])

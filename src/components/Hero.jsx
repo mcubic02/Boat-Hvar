@@ -39,8 +39,8 @@ const heroPhotosRight = [
     className: 'hero__photo hero__photo--tilt-left hero__photo--m5',
   },
   {
-    src: '/images/SafariTour.png',
-    alt: 'Quad safari tour overlooking the sea',
+    src: '/images/JetSki.png',
+    alt: 'Jet ski',
     className: 'hero__photo hero__photo--tilt-right hero__photo--m6',
   },
 ]
