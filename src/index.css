@@ -373,7 +373,7 @@ a {
 .gallery-popup__backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(10, 37, 64, 0.92);
+  background: color-mix(in srgb, var(--background-color) 94%, transparent);
   backdrop-filter: blur(8px);
   border: none;
   cursor: pointer;

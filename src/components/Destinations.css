@@ -58,9 +58,27 @@
   text-align: justify;
 }
 
+.destinations__map {
+  margin: 2.5rem 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.destinations__map img {
+  width: 100%;
+  max-width: 1136px;
+  height: auto;
+  border-radius: 10px;
+}
+
 @media (max-width: 1050px) {
   .destinations__grid {
     grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+
+  .destinations__map {
     max-width: 480px;
   }
 }
