@@ -14,12 +14,12 @@
 
 .destinations__title {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 30px;
-  letter-spacing: 0.5px;
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.1;
+  letter-spacing: 0;
   color: var(--font-color);
-  margin: 0 0 1.75rem;
+  margin: 0 0 2rem;
 }
 
 .destinations__grid {

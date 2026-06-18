@@ -21,7 +21,7 @@ const heroPhotosLeft = [
     className: 'hero__photo hero__photo--tilt-right hero__photo--m2',
   },
   {
-    src: '/images/Kayak.avif',
+    src: '/images/kayak.png',
     alt: 'Kayak on the sea',
     className: 'hero__photo hero__photo--tilt-left hero__photo--m3',
   },

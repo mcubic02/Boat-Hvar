@@ -103,7 +103,7 @@ export const boats = [
     price: '15 € / hour · 40 € / day',
     description:
       'Explore the coastline at your own pace. A great way to reach nearby beaches and coves under your own power, perfect for a single paddler or a pair.',
-    image: '/images/Kayak.avif',
+    image: '/images/kayak.png',
     imageAlt: 'Kayak on the sea',
     note: 'no licence needed',
     bookUrl: WHATSAPP_DEFAULT_URL,
@@ -115,7 +115,7 @@ export const boats = [
     price: '290 € / day',
     description:
       'A spacious and comfortable boat for larger groups. Ideal for family trips or gatherings, with plenty of space for relaxation and fun on the water.',
-    image: '/images/Sunbird.jpeg',
+    image: '/images/Sunbird.png',
     imageAlt: 'Sunbird boat at sea',
     note: 'licence needed',
     bookUrl: WHATSAPP_PRIMARY_URL,
@@ -127,7 +127,7 @@ export const boats = [
     price: '290 € / day',
     description:
       'A fast and agile speedboat ideal for exploring hidden coves and the Pakleni islands. Perfect for groups looking for a day full of adventure at sea.',
-    image: '/images/JokerCoaster.jpg',
+    image: '/images/JokerCoaster.png',
     imageAlt: 'Joker Coaster speedboat at sea',
     note: 'licence needed',
     bookUrl: WHATSAPP_PRIMARY_URL,
