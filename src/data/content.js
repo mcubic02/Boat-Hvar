@@ -244,41 +244,12 @@ export const destinations = [
   },
 ]
 
-export const galleryImages = [
-  {
-    id: 1,
-    src: 'https://images.unsplash.com/photo-1567899378494-47b05033f870?w=1200&q=80',
-    alt: 'Boat on the turquoise sea near Hvar',
-    caption: 'Morning tour along the Hvar coast',
-  },
-  {
-    id: 2,
-    src: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&q=80',
-    alt: 'View of the Pakleni islands',
-    caption: 'Pakleni islands — crystal clear sea',
-  },
-  {
-    id: 3,
-    src: 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1200&q=80',
-    alt: 'Yacht in a bay',
-    caption: 'A private cove for swimming and relaxing',
-  },
-  {
-    id: 4,
-    src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&q=80',
-    alt: 'Sunset from a boat',
-    caption: 'Sunset from the deck',
-  },
-  {
-    id: 5,
-    src: 'https://images.unsplash.com/photo-1605281317010-76c7bdecaa2a?w=1200&q=80',
-    alt: 'Boat on the open sea',
-    caption: 'Open sea and freedom',
-  },
-  {
-    id: 6,
-    src: 'https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=1200&q=80',
-    alt: 'Dalmatian coast',
-    caption: 'The Dalmatian coast from a bird\'s-eye view',
-  },
-]
+export const galleryImages = Array.from({ length: 16 }, (_, index) => {
+  const number = index + 1
+  return {
+    id: number,
+    src: `/images/gallery${number}.png`,
+    alt: `Hvar adventures — gallery photo ${number}`,
+    caption: '',
+  }
+})
