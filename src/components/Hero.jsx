@@ -25,6 +25,11 @@ const heroPhotosLeft = [
     alt: 'Kayak on the sea',
     className: 'hero__photo hero__photo--tilt-left hero__photo--m3',
   },
+  {
+    src: '/images/SafariTour.png',
+    alt: 'Quad safari tour overlooking the sea',
+    className: 'hero__photo hero__photo--tilt-right hero__photo--m8',
+  },
 ]
 
 const heroPhotosRight = [

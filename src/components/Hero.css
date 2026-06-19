@@ -31,6 +31,17 @@
   pointer-events: none;
 }
 
+/* Četvrta slika u lijevom stupcu — samo na tablet veličinama */
+.hero__photo--m8 {
+  display: none;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .hero__photo--m8 {
+    display: block;
+  }
+}
+
 .hero__column {
   position: absolute;
   top: 50%;
@@ -43,6 +54,12 @@
 .hero__column--left {
   left: 4%;
   transform: translateY(calc(-50% + 70px));
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .hero__column--left {
+    transform: translateY(-50%);
+  }
 }
 
 .hero__column--right {
