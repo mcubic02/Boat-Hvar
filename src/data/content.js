@@ -28,10 +28,10 @@ export const quickInfoItems = [
 export const reviews = [
   {
     id: 1,
-    name: 'Ana M.',
+    name: 'Ferdi',
     location: 'Zagreb',
     rating: 5,
-    text: 'An unforgettable experience! The captain took us to hidden coves we could never have found on our own. I recommend it to anyone who wants to see the real Hvar.',
+    text: 'We rented a small boat here with a friend for a day trip (no licence needed) and it was the perfect way to explore the nearby island of Šćedro. You don’t need much experience — driving the boat is simple, and the owner gives you a quick intro that’s really all you need. Docking takes a little practice, but that’s part of the fun, and there’s some shade for the sun. The price was fair and fuel was included. With the boat you can reach beautiful bays around the island, where a couple of great restaurants serve fresh fish. An easy and fun adventure!',
     date: 'August 2025',
   },
   {

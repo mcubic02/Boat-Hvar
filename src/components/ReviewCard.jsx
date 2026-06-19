@@ -12,10 +12,10 @@ function StarRating({ rating }) {
   )
 }
 
-function ReviewCard({ review, title = 'What out clients thinks' }) {
+function ReviewCard({ review, title = 'What our clients think' }) {
   return (
     <article className="review-card">
-      <p className="review-card__eyebrow">{title}</p>
+      <h3 className="review-card__eyebrow">{title}</h3>
 
       <StarRating rating={review.rating} />
 
@@ -23,9 +23,7 @@ function ReviewCard({ review, title = 'What out clients thinks' }) {
 
       <footer className="review-card__footer">
         <cite className="review-card__name">{review.name}</cite>
-        <span className="review-card__meta">
-          {review.location} · {review.date}
-        </span>
+        <span className="review-card__meta">{review.date}</span>
       </footer>
     </article>
   )

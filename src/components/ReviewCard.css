@@ -2,23 +2,24 @@
   box-sizing: border-box;
   width: 599px;
   max-width: 100%;
-  min-height: 281px;
+  min-height: var(--review-card-min-height, 281px);
   border-radius: 6.86px;
   padding: 32.92px 95.11px 32.92px 43.89px;
   background: var(--font-color);
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .review-card__eyebrow {
-  font-family: 'KH Teka TRIAL', 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 10.25px;
-  line-height: 14.4px;
-  letter-spacing: 0;
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
   color: #2a2a2a;
-  text-transform: capitalize;
+  margin: 0;
 }
 
 .review-card__stars {
@@ -73,6 +74,6 @@
   .review-card {
     width: 100%;
     padding: 1.75rem 1.5rem;
-    min-height: auto;
+    min-height: var(--review-card-min-height, auto);
   }
 }

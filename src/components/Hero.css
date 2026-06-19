@@ -12,7 +12,8 @@
 .hero__logo {
   position: absolute;
   top: 1.5rem;
-  left: 1.75rem;
+  left: calc(4% + 75px);
+  transform: translateX(-50%);
   z-index: 5;
   display: inline-flex;
 }
@@ -165,6 +166,11 @@
     min-height: 100svh;
     max-height: 100svh;
     overflow: hidden;
+  }
+
+  .hero__logo {
+    left: 1.5rem;
+    transform: none;
   }
 
   .hero__photos {
