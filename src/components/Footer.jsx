@@ -11,27 +11,12 @@ function Footer() {
             </p>
 
             <div className="footer__brand-row">
-              <a href="#top" className="footer__brand" aria-label="Oasis Meu">
-                <span className="footer__brand-mark" aria-hidden="true">
-                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="20" cy="20" r="19" stroke="currentColor" strokeWidth="1.2" />
-                    <path
-                      d="M20 8c6.6 0 12 5.4 12 12 0 4-3.2 7.2-7.2 7.2-3.2 0-5.8-2.6-5.8-5.8 0-2.6 2.1-4.7 4.7-4.7"
-                      stroke="currentColor"
-                      strokeWidth="1.2"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M20 14c3.3 0 6 2.7 6 6 0 1.7-1.3 3-3 3"
-                      stroke="currentColor"
-                      strokeWidth="1.2"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>
-                <span className="footer__brand-name">
-                  O<span>asis</span> <span className="footer__brand-sub">meu</span>
-                </span>
+              <a href="#top" className="footer__brand" aria-label="Ivan Dolac">
+                <img
+                  src="/images/IVAN DOLAC LOGO.svg"
+                  alt="Ivan Dolac"
+                  className="footer__brand-logo"
+                />
               </a>
 
               <div className="footer__contact">

@@ -1,11 +1,27 @@
 .hero {
   position: relative;
+  z-index: 2;
   min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
   background: transparent;
+}
+
+.hero__logo {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.75rem;
+  z-index: 5;
+  display: inline-flex;
+}
+
+.hero__logo img {
+  display: block;
+  width: auto;
+  height: clamp(42px, 7vw, 64px);
+  filter: brightness(0) invert(1);
 }
 
 .hero__photos {
@@ -25,6 +41,7 @@
 
 .hero__column--left {
   left: 4%;
+  transform: translateY(calc(-50% + 70px));
 }
 
 .hero__column--right {
@@ -147,6 +164,7 @@
     height: 100svh;
     min-height: 100svh;
     max-height: 100svh;
+    overflow: hidden;
   }
 
   .hero__photos {
@@ -206,7 +224,8 @@
     z-index: 1;
   }
 
-  .hero__photo--m3 {
+  .hero__photo--m3,
+  .hero__photo--m7 {
     display: none;
   }
 

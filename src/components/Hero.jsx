@@ -43,11 +43,20 @@ const heroPhotosRight = [
     alt: 'Jet ski',
     className: 'hero__photo hero__photo--tilt-right hero__photo--m6',
   },
+  {
+    src: '/images/Sunbird.png',
+    alt: 'Sunbird boat at sea',
+    className: 'hero__photo hero__photo--tilt-left hero__photo--m7',
+  },
 ]
 
 function Hero() {
   return (
     <header id="top" className="hero">
+      <a href="#top" className="hero__logo" aria-label="Ivan Dolac">
+        <img src="/images/IVAN DOLAC LOGO.svg" alt="Ivan Dolac" />
+      </a>
+
       <div className="hero__photos" aria-hidden="true">
         <div className="hero__column hero__column--left">
           {heroPhotosLeft.map((photo) => (
