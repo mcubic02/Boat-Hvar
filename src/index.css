@@ -223,7 +223,7 @@ a {
 }
 
 .gallery__inner {
-  max-width: 960px;
+  max-width: 1136px;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
@@ -239,6 +239,7 @@ a {
   letter-spacing: 0.5px;
   color: var(--font-color);
   margin: 0 0 1.5rem;
+  max-width: 760px;
 }
 
 .gallery__text {
@@ -269,7 +270,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   width: 100%;
-  max-width: 960px;
+  max-width: 1136px;
   text-align: left;
 }
 
@@ -281,6 +282,9 @@ a {
 }
 
 .gallery__location-name {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -288,6 +292,12 @@ a {
   letter-spacing: 0.4px;
   color: #3d4559;
   margin: 0 0 0.6rem;
+}
+
+.gallery__location-icon {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
 }
 
 .gallery__location-text {

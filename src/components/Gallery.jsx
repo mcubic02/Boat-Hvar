@@ -37,7 +37,19 @@ function Gallery() {
           <div className="gallery__locations">
             {locationInfo.places.map((place) => (
               <article key={place.name} className="gallery__location">
-                <h3 className="gallery__location-name">{place.name}</h3>
+                <h3 className="gallery__location-name">
+                  <svg
+                    className="gallery__location-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 2C8.1 2 5 5.1 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  {place.name}
+                </h3>
                 <p className="gallery__location-text">{place.text}</p>
               </article>
             ))}
