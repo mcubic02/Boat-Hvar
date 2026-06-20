@@ -11,7 +11,7 @@ const heroServices = [
 
 const heroPhotosLeft = [
   {
-    src: '/images/SpeedBoat.png',
+    src: '/images/Sunbird.png',
     alt: 'Speed boat on turquoise sea',
     className: 'hero__photo hero__photo--tilt-left hero__photo--m1',
   },

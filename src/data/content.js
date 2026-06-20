@@ -74,26 +74,26 @@ export const WHATSAPP_DEFAULT_URL = 'https://wa.me/385919795375'
 export const boats = [
   {
     id: 0,
-    name: 'Speed Boat',
+    name: 'Arimar Style 500',
     capacity: '5 people',
     price: '180 € / day',
     description:
       'A fast and agile speedboat ideal for exploring hidden coves and the Pakleni islands. Perfect for groups looking for a day full of adventure at sea.',
     image: '/images/SpeedBoat.png',
     imageAlt: 'Speedboat at sea',
-    note: 'drivers licence needed · fuel not included',
+    note: 'fuel not included',
     bookUrl: WHATSAPP_DEFAULT_URL,
   },
   {
     id: 1,
     name: 'Pasara',
     capacity: '5 people',
-    price: '90 € / day',
+    price: '100 € / day',
     description:
       'A traditional Dalmatian pasara for relaxed exploring of the surrounding coves and beaches. Easy to handle and ideal for a calmer day at sea.',
     image: '/images/Pasara.png',
     imageAlt: 'Pasara boat at sea',
-    note: 'no licence needed · fuel included',
+    note: 'fuel included',
     bookUrl: WHATSAPP_DEFAULT_URL,
   },
   {
@@ -105,31 +105,28 @@ export const boats = [
       'Explore the coastline at your own pace. A great way to reach nearby beaches and coves under your own power, perfect for a single paddler or a pair.',
     image: '/images/kayak.png',
     imageAlt: 'Kayak on the sea',
-    note: 'no licence needed',
     bookUrl: WHATSAPP_DEFAULT_URL,
   },
   {
     id: 3,
-    name: 'Sunbird',
+    name: 'Sunbird 650',
     capacity: '7 people',
     price: '290 € / day',
     description:
       'A spacious and comfortable boat for larger groups. Ideal for family trips or gatherings, with plenty of space for relaxation and fun on the water.',
     image: '/images/Sunbird.png',
     imageAlt: 'Sunbird boat at sea',
-    note: 'licence needed',
     bookUrl: WHATSAPP_PRIMARY_URL,
   },
   {
     id: 4,
-    name: 'Joker Coaster ',
+    name: 'Joker Coaster 650',
     capacity: '7 people',
     price: '290 € / day',
     description:
       'A fast and agile speedboat ideal for exploring hidden coves and the Pakleni islands. Perfect for groups looking for a day full of adventure at sea.',
     image: '/images/JokerCoaster.png',
     imageAlt: 'Joker Coaster speedboat at sea',
-    note: 'licence needed',
     bookUrl: WHATSAPP_PRIMARY_URL,
   },
   {
@@ -141,7 +138,6 @@ export const boats = [
       'A fast and agile jet ski ideal for exploring hidden coves and the Pakleni islands. Perfect for a single person looking for a day full of adventure at sea.',
     image: '/images/JetSki.png',
     imageAlt: 'Jet ski at sea',
-    note: 'no licence needed',
     bookUrl: WHATSAPP_PRIMARY_URL,
   },
 ]
