@@ -18,8 +18,10 @@ function Destinations() {
 
         <figure className="destinations__map">
           <img
-            src="/images/mapa slika 1.png"
+            src="/images/mapa slika 1.webp"
             alt="Map of Hvar and the surrounding islands — Šćedro, Vis and the Pakleni islands"
+            loading="lazy"
+            decoding="async"
           />
         </figure>
       </div>

@@ -12,11 +12,7 @@ function Footer() {
 
             <div className="footer__brand-row">
               <a href="#top" className="footer__brand" aria-label="Ivan Dolac">
-                <img
-                  src="/images/IVAN DOLAC LOGO.svg"
-                  alt="Ivan Dolac"
-                  className="footer__brand-logo"
-                />
+                <span className="footer__brand-logo" aria-hidden="true" />
               </a>
 
               <div className="footer__contact">
@@ -28,7 +24,7 @@ function Footer() {
 
           <nav className="footer__menus" aria-label="Footer">
             <div className="footer__col">
-              <h3 className="footer__col-title">IME OBJEKTA</h3>
+              <h3 className="footer__col-title">SAIL AWAY</h3>
               <ul>
                 <li><a href="#boat-tours">Private Boat Excursions</a></li>
                 <li><a href="#quad-tours">Quad Tours</a></li>

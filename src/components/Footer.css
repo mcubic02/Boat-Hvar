@@ -56,13 +56,22 @@
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
-  color: #2a2a2a;
+  color: #5e6c93;
 }
 
 .footer__brand-logo {
   display: block;
-  width: auto;
+  width: 76px;
   height: 56px;
+  background-color: currentColor;
+  mask-image: url('/images/IVAN DOLAC LOGO.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('/images/IVAN DOLAC LOGO.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
 }
 
 .footer__contact {

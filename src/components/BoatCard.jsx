@@ -26,7 +26,13 @@ function BoatCard({
       </div>
 
       <div className="boat-card__image-wrap">
-        <img src={image} alt={imageAlt} className="boat-card__image" />
+        <img
+          src={image}
+          alt={imageAlt}
+          className="boat-card__image"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
 
       <a

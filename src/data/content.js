@@ -36,35 +36,27 @@ export const reviews = [
   },
   {
     id: 2,
-    name: 'Marko & Petra',
+    name: 'Aschel Kristos',
     location: 'Split',
     rating: 5,
-    text: 'A perfect day at sea. The boat is clean, modern and very comfortable. Flawless organization — booking, departure, return, all on time.',
-    date: 'July 2025',
+    text: 'A perfect way to spend the day exploring hidden coves and surrounding islands. Service was friendly and professional, reasonable prices, I couldn\'t recommend more.',
+    date: 'August 2025',
   },
   {
     id: 3,
-    name: 'Thomas K.',
-    location: 'Germany',
+    name: 'Olivia Lewon',
+    location: 'Poland',
     rating: 5,
-    text: 'Best boat trip on our Croatia vacation. The captain spoke excellent English and knew every hidden spot around Pakleni islands.',
-    date: 'June 2025',
+    text: 'I highly recommend it to everyone. Beautiful views, a friendly atmosphere, comfort, and safety. If I ever come back here, I will certainly stay again :)',
+    date: 'July 2025',
   },
   {
     id: 4,
-    name: 'Sophie L.',
-    location: 'France',
+    name: 'Jan Kühne',
+    location: 'Germany',
     rating: 5,
-    text: 'Absolutely magical day! Crystal clear water, friendly crew and a route perfectly tailored to what we wanted. We swam at the most beautiful coves of our trip.',
+    text: 'Good boat, good briefing on the boat and destinations. Would happily do it again. 👍👍👍',
     date: 'September 2025',
-  },
-  {
-    id: 5,
-    name: 'James & Emily',
-    location: 'United Kingdom',
-    rating: 5,
-    text: 'Highly recommend! Everything was smooth from booking to drop-off. The skipper made our day relaxed and fun, and the views were unforgettable.',
-    date: 'July 2025',
   },
 ]
 
@@ -79,7 +71,7 @@ export const boats = [
     price: '180 € / day',
     description:
       'A fast and agile speedboat ideal for exploring hidden coves and the Pakleni islands. Perfect for groups looking for a day full of adventure at sea.',
-    image: '/images/SpeedBoat.png',
+    image: '/images/SpeedBoat.webp',
     imageAlt: 'Speedboat at sea',
     note: 'fuel not included',
     bookUrl: WHATSAPP_DEFAULT_URL,
@@ -91,7 +83,7 @@ export const boats = [
     price: '100 € / day',
     description:
       'A traditional Dalmatian pasara for relaxed exploring of the surrounding coves and beaches. Easy to handle and ideal for a calmer day at sea.',
-    image: '/images/Pasara.png',
+    image: '/images/Pasara.webp',
     imageAlt: 'Pasara boat at sea',
     note: 'fuel included',
     bookUrl: WHATSAPP_DEFAULT_URL,
@@ -103,7 +95,7 @@ export const boats = [
     price: '15 € / hour · 40 € / day',
     description:
       'Explore the coastline at your own pace. A great way to reach nearby beaches and coves under your own power, perfect for a single paddler or a pair.',
-    image: '/images/kayak.png',
+    image: '/images/kayak.webp',
     imageAlt: 'Kayak on the sea',
     bookUrl: WHATSAPP_DEFAULT_URL,
   },
@@ -114,7 +106,7 @@ export const boats = [
     price: '290 € / day',
     description:
       'A spacious and comfortable boat for larger groups. Ideal for family trips or gatherings, with plenty of space for relaxation and fun on the water.',
-    image: '/images/Sunbird.png',
+    image: '/images/Sunbird.webp',
     imageAlt: 'Sunbird boat at sea',
     bookUrl: WHATSAPP_PRIMARY_URL,
   },
@@ -125,7 +117,7 @@ export const boats = [
     price: '290 € / day',
     description:
       'A fast and agile speedboat ideal for exploring hidden coves and the Pakleni islands. Perfect for groups looking for a day full of adventure at sea.',
-    image: '/images/JokerCoaster.png',
+    image: '/images/JokerCoaster.webp',
     imageAlt: 'Joker Coaster speedboat at sea',
     bookUrl: WHATSAPP_PRIMARY_URL,
   },
@@ -136,7 +128,7 @@ export const boats = [
     price: '50 € / 15 minutes',
     description:
       'A fast and agile jet ski ideal for exploring hidden coves and the Pakleni islands. Perfect for a single person looking for a day full of adventure at sea.',
-    image: '/images/JetSki.png',
+    image: '/images/JetSki.webp',
     imageAlt: 'Jet ski at sea',
     bookUrl: WHATSAPP_PRIMARY_URL,
   },
@@ -151,7 +143,7 @@ export const quads = [
     description:
       'Real off-road experience — rocky terrain, sea-view trails and hidden island routes. Explore Hvar like a local with a professional guide.',
     image:
-      '/images/Quad.png',
+      '/images/Quad.webp',
     imageAlt: 'Linhai Landforce 550L quad ATV',
     note: 'Ivan Dolac · Zavala · Sv. Nedilja',
     bookUrl: WHATSAPP_DEFAULT_URL,
@@ -164,7 +156,7 @@ export const quads = [
     description:
       'Our top-spec quad for the most demanding off-road routes. More power for rocky terrain, sea-view trails and hidden island roads.',
     image:
-      '/images/Quad2.png',
+      '/images/Quad2.webp',
     imageAlt: 'Linhai Landforce 650L Pro quad ATV',
     note: 'Ivan Dolac · Zavala · Sv. Nedilja',
     bookUrl: WHATSAPP_DEFAULT_URL,
@@ -180,7 +172,7 @@ export const safariTours = [
     description:
       'Off-road adventure with amazing viewpoints, led by a professional guide. Explore Hvar like a local — rocky terrain, sea-view trails and hidden island routes. Equipment included.',
     image:
-      '/images/SafariTour.png',
+      '/images/SafariTour.webp',
     imageAlt: 'Quad safari tour on Hvar',
     note: 'Duration ~2.5h',
     bookUrl: WHATSAPP_DEFAULT_URL,
@@ -196,7 +188,7 @@ export const fishingTrips = [
     description:
       'A morning or evening trip — what you catch, you take home! Target species include orada, arbun, skuša, škrpina, šampjer, zubatac, lignja, lampuga and fratar.',
     image:
-      '/images/Fishing.png',
+      '/images/Fishing.webp',
     imageAlt: 'Fishing from a boat at sea',
     note: 'Included: equipment, licence, bait & fuel · duration 2–4 h',
     bookUrl: WHATSAPP_DEFAULT_URL,
@@ -244,7 +236,7 @@ export const galleryImages = Array.from({ length: 16 }, (_, index) => {
   const number = index + 1
   return {
     id: number,
-    src: `/images/gallery${number}.png`,
+    src: `/images/gallery${number}.webp`,
     alt: `Hvar adventures — gallery photo ${number}`,
     caption: '',
   }

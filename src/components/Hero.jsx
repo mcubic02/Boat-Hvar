@@ -11,22 +11,22 @@ const heroServices = [
 
 const heroPhotosLeft = [
   {
-    src: '/images/Sunbird.png',
+    src: '/images/Sunbird.webp',
     alt: 'Speed boat on turquoise sea',
     className: 'hero__photo hero__photo--tilt-left hero__photo--m1',
   },
   {
-    src: '/images/Quad2.png',
+    src: '/images/Quad2.webp',
     alt: 'Quad tour on Hvar',
     className: 'hero__photo hero__photo--tilt-right hero__photo--m2',
   },
   {
-    src: '/images/kayak.png',
+    src: '/images/kayak.webp',
     alt: 'Kayak on the sea',
     className: 'hero__photo hero__photo--tilt-left hero__photo--m3',
   },
   {
-    src: '/images/SafariTour.png',
+    src: '/images/SafariTour.webp',
     alt: 'Quad safari tour overlooking the sea',
     className: 'hero__photo hero__photo--tilt-right hero__photo--m8',
   },
@@ -34,22 +34,22 @@ const heroPhotosLeft = [
 
 const heroPhotosRight = [
   {
-    src: '/images/Fishing.png',
+    src: '/images/Fishing.webp',
     alt: 'Fishing trip catch',
     className: 'hero__photo hero__photo--tilt-right hero__photo--m4',
   },
   {
-    src: '/images/Pasara.png',
+    src: '/images/Pasara.webp',
     alt: 'Pasara boat at sea',
     className: 'hero__photo hero__photo--tilt-left hero__photo--m5',
   },
   {
-    src: '/images/JetSki.png',
+    src: '/images/JetSki.webp',
     alt: 'Jet ski',
     className: 'hero__photo hero__photo--tilt-right hero__photo--m6',
   },
   {
-    src: '/images/Sunbird.png',
+    src: '/images/Sunbird.webp',
     alt: 'Sunbird boat at sea',
     className: 'hero__photo hero__photo--tilt-left hero__photo--m7',
   },

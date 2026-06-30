@@ -5,6 +5,7 @@ import Gallery from './components/Gallery'
 import BoatTours from './components/BoatTours'
 import Destinations from './components/Destinations'
 import Footer from './components/Footer'
+import Seo from './components/Seo'
 
 function App() {
   useEffect(() => {
@@ -31,11 +32,15 @@ function App() {
 
   return (
     <>
+      <Seo />
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
       <Hero />
-      <Gallery />
-      <BoatTours />
-      <Destinations />
-      <main>
+      <main id="main-content">
+        <Gallery />
+        <BoatTours />
+        <Destinations />
         <Reviews />
       </main>
       <Footer />

@@ -8,7 +8,7 @@
 .reviews__bg {
   position: absolute;
   inset: 0;
-  background: url('/images/reviewsBg.jpg') center / cover no-repeat;
+  background: url('/images/reviewsBg.webp') center / cover no-repeat;
 }
 
 .reviews__bg::after {
