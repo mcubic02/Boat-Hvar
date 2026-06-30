@@ -15,7 +15,7 @@ export const siteMeta = {
   language: 'en',
   ogImage: '/images/gallery1.webp',
   ogImageAlt: 'Boat and quad adventures on Hvar island, Croatia',
-  telephone: '+38598860853',
+  telephone: '+385919795375',
   email: null,
   address: {
     locality: 'Ivan Dolac',
