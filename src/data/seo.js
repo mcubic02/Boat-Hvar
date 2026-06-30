@@ -13,8 +13,11 @@ export const siteMeta = {
     'boat rental Hvar, quad tours Hvar, Ivan Dolac, Zavala, Sv Nedjelja, Pakleni islands, jet ski rental, fishing charter Hvar, kayak rental Croatia, private boat tour',
   locale: 'en_US',
   language: 'en',
-  ogImage: '/images/gallery1.webp',
+  ogImage: '/og-image.jpg',
   ogImageAlt: 'Boat and quad adventures on Hvar island, Croatia',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageType: 'image/jpeg',
   telephone: '+385919795375',
   email: null,
   address: {
